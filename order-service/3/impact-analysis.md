@@ -1,1 +1,136 @@
-IyBJbXBhY3QgQW5hbHlzaXMgUmVwb3J0CioqUFI6KiogIzMgfCAqKkJyYW5jaDoqKiB0ZXN0L3NlcnZpY2UtZGlzY292ZXJ5LWFnZW50LWRlbW8gfCAqKlJlcG86KiogZWNvbW1lcmNlLW1pY3Jvc2VydmljZS1iYWNrZW5kLWFwcAoqKlNvdXJjZSBQUiBVUkw6KiogaHR0cHM6Ly9naXRodWIuY29tL2FiaGlzaGVrc2luZ2gtMDcxMC9lY29tbWVyY2UtbWljcm9zZXJ2aWNlLWJhY2tlbmQtYXBwL3B1bGwvMwoqKkdlbmVyYXRlZDoqKiAyMDI2LTA1LTE0VDAwOjAwOjAwWgoKIyMgRXhlY3V0aXZlIFN1bW1hcnkKClBSICMzIChicmFuY2ggYHRlc3Qvc2VydmljZS1kaXNjb3ZlcnktYWdlbnQtZGVtb2ApIG1ha2VzIHR3byBhZGRpdGl2ZSBjaGFuZ2VzIHRvICoqb3JkZXItc2VydmljZSoqOiBhIG5ldyBgb3JkZXJTdGF0dXNgIGZpZWxkIGlzIGFkZGVkIHRvIGBPcmRlckR0b2AsIGFuZCBhIG5ldyBgR0VUIC9hcGkvb3JkZXJzL3N0YXR1cy97c3RhdHVzfWAgZW5kcG9pbnQgaXMgYWRkZWQgdG8gYE9yZGVyUmVzb3VyY2VgLiBBbHRob3VnaCBib3RoIGNoYW5nZXMgYXJlIGJhY2t3YXJkLWNvbXBhdGlibGUgYWRkaXRpb25zIChubyBmaWVsZHMgcmVtb3ZlZCwgbm8gZW5kcG9pbnRzIGRlbGV0ZWQgb3IgcmVuYW1lZCksIHRoZXkgcmlwcGxlIHRocm91Z2ggKio0IHNlcnZpY2VzKiogdG90YWw6IG9yZGVyLXNlcnZpY2UgaXRzZWxmIChkaXJlY3RseSBjaGFuZ2VkKSwgcGx1cyBwYXltZW50LXNlcnZpY2UsIHNoaXBwaW5nLXNlcnZpY2UsIGFuZCBwcm94eS1jbGllbnQgd2hpY2ggYWxsIGNvbnN1bWUgb3JkZXItc2VydmljZSdzIGBHRVQgL2FwaS9vcmRlcnMve29yZGVySWR9YCBlbmRwb2ludC4gKipObyBicmVha2luZyBjaGFuZ2VzKiogd2VyZSBkZXRlY3RlZC4gQSB0b3RhbCBvZiAqKjE1IHRlc3QgY2FzZXMqKiBhcmUgcmVjb21tZW5kZWQsIHNwYW5uaW5nIHVuaXQsIGludGVncmF0aW9uLCBwcm92aWRlci1jb250cmFjdCwgYW5kIGNvbnN1bWVyLWNvbnRyYWN0IHR5cGVzLgoKLS0tCgojIyBDaGFuZ2VkIEZpbGVzCgojIyMgYG9yZGVyLXNlcnZpY2Uvc3JjL21haW4vamF2YS9jb20vc2VsaW1ob3JyaS9hcHAvZHRvL09yZGVyRHRvLmphdmFgCi0gKipTZXJ2aWNlOioqIG9yZGVyLXNlcnZpY2UKLSAqKkxheWVyOioqIGR0bwotICoqU3VtbWFyeToqKiBBZGRlZCBhIG5ldyBgb3JkZXJTdGF0dXNgIGZpZWxkICh0eXBlIGBTdHJpbmdgLCBhbm5vdGF0ZWQgYEBKc29uSW5jbHVkZShOT05fTlVMTClgKSByZXByZXNlbnRpbmcgdGhlIGxpZmVjeWNsZSBzdGF0ZSBvZiBhbiBvcmRlcjsgYWxsb3dlZCB2YWx1ZXMgYXJlIGBQRU5ESU5HYCwgYENPTkZJUk1FRGAsIGBTSElQUEVEYCwgYERFTElWRVJFRGAsIGBDQU5DRUxMRURgLgotICoqRmllbGQgY2hhbmdlczoqKgoKICB8IEZpZWxkIHwgVHlwZSB8IENoYW5nZSBUeXBlIHwgUmlzayB8CiAgfC0tLS0tLS18LS0tLS0tfC0tLS0tLS0tLS0tLS18LS0tLS0tfAogIHwgYG9yZGVyU3RhdHVzYCB8IGBTdHJpbmdgIHwgQWRkZWQgfCBEb3duc3RyZWFtIGNvbnN1bWVycyB3aWxsIHJlY2VpdmUgYSBuZXcgZmllbGQgaW4gQVBJIHJlc3BvbnNlczsgYWJzZW5jZSBvZiB0aGlzIGZpZWxkIGluIG9sZGVyIHJlY29yZHMgbXVzdCBiZSB0b2xlcmF0ZWQgKGBASnNvbkluY2x1ZGUoTk9OX05VTEwpYCBzdXBwcmVzc2VzIG51bGwgdmFsdWVzKSB8CgotLS0KCiMjIyBgb3JkZXItc2VydmljZS9zcmMvbWFpbi9qYXZhL2NvbS9zZWxpbWhvcnJpL2FwcC9yZXNvdXJjZS9PcmRlclJlc291cmNlLmphdmFgCi0gKipTZXJ2aWNlOioqIG9yZGVyLXNlcnZpY2UKLSAqKkxheWVyOioqIGNvbnRyb2xsZXIKLSAqKlN1bW1hcnk6KiogQWRkZWQgYSBuZXcgYEdFVCAvYXBpL29yZGVycy9zdGF0dXMve3N0YXR1c31gIGVuZHBvaW50IChgZmluZEJ5U3RhdHVzYCkgdGhhdCBmaWx0ZXJzIHRoZSBmdWxsIG9yZGVyIGxpc3QgYnkgYG9yZGVyU3RhdHVzYCB1c2luZyBhIGNhc2UtaW5zZW5zaXRpdmUgc3RyZWFtIGZpbHRlcjsgcGF0aCB2YXJpYWJsZSBpcyB2YWxpZGF0ZWQgYEBOb3RCbGFua2AuCi0gKipBUEkgY2hhbmdlczoqKgoKICB8IE1ldGhvZCB8IFBhdGggfCBDaGFuZ2UgVHlwZSB8IE5vdGVzIHwKICB8LS0tLS0tLS18LS0tLS0tfC0tLS0tLS0tLS0tLS18LS0tLS0tLXwKICB8IGBHRVRgIHwgYC9hcGkvb3JkZXJzL3N0YXR1cy97c3RhdHVzfWAgfCBBZGRlZCB8IE5ldyBlbmRwb2ludCBmb3IgbGlmZWN5Y2xlLXN0YXR1cy1iYXNlZCBmaWx0ZXJpbmc7IHJldHVybnMgYER0b0NvbGxlY3Rpb25SZXNwb25zZTxPcmRlckR0bz5gOyBzdGF0dXMgcGF0aCB2YXJpYWJsZSB2YWxpZGF0ZWQgYEBOb3RCbGFua2AgfAoKLS0tCgojIyBEZXBlbmRlbmN5IEdyYXBoCgpgYGAKb3JkZXItc2VydmljZSAgW0RJUkVDVExZIENIQU5HRURdCiAgfAogIHzilIDilIAgb3JkZXJTdGF0dXMgZmllbGQgYWRkZWQgdG8gT3JkZXJEdG8KICB84pSA4pSAIEdFVCAvYXBpL29yZGVycy9zdGF0dXMve3N0YXR1c30gZW5kcG9pbnQgYWRkZWQKICB8CiAgK+KUgOKUgCBwYXltZW50LXNlcnZpY2UgIFtDT05TVU1FUi1DT05UUkFDVCBSSVNLXQogIHwgICAgICAgUGF5bWVudFNlcnZpY2VJbXBsLmdldE9yZGVyKCkgY2FsbHMKICB8ICAgICAgIEdFVCAvb3JkZXItc2VydmljZS9hcGkvb3JkZXJzL3tvcmRlcklkfSB2aWEgUmVzdFRlbXBsYXRlIChATG9hZEJhbGFuY2VkKQogIHwgICAgICAgV2lsbCBub3cgcmVjZWl2ZSBvcmRlclN0YXR1cyBpbiByZXNwb25zZSBib2R5CiAgfAogICt+kIAgc2hpcHBpbmctc2VydmljZSAgW0NPTlNVTUVSLUNPTlRSQUNUIFJJU0tdCiAgfCAgICAgICBPcmRlckl0ZW1TZXJ2aWNlSW1wbC5nZXRPcmRlcigpIGNhbGxzCiAgfCAgICAgICBHRVQgL29yZGVyLXNlcnZpY2UvYXBpL29yZGVycy97b3JkZXJJZH0gdmlhIFJlc3RUZW1wbGF0ZSAoQExvYWRCYWxhbmNlZCkKICB8ICAgICAgIFdpbGwgbm93IHJlY2VpdmUgb3JkZXJTdGF0dXMgaW4gcmVzcG9uc2UgYm9keQogIHwKICArfpAgcHJveHktY2xpZW50ICBbQ09OU1VNRVItQ09OVFJBQ1QgUklTS10KICAgICAgICAgIE9yZGVyQ2xpZW50U2VydmljZSBGZWlnbkNsaWVudCBjYWxscwogICAgICAgICAgR0VUL1BPU1QvUFVUL0RFTEVURSAvb3JkZXItc2VydmljZS9hcGkvb3JkZXJzLyoqIChhbGwgb3JkZXIgZW5kcG9pbnRzKQogICAgICAgICAgV2lsbCBub3cgcmVjZWl2ZSBvcmRlclN0YXR1cyBpbiBHRVQgcmVzcG9uc2VzCiAgICAgICAgICBOZXcgR0VUIC9zdGF0dXMve3N0YXR1c30gZW5kcG9pbnQgbm90IHlldCBtYXBwZWQgaW4gRmVpZ25DbGllbnQKYGBgCgotLS0KCiMjIFNlcnZpY2UtYnktU2VydmljZSBJbXBhY3QKCiMjIyBvcmRlci1zZXJ2aWNlIOKAlCBbRElSRUNUTFkgQ0hBTkdFRF0KLSAqKlJvbGU6KiogRGlyZWN0bHkgY2hhbmdlZAotICoqUmVhc29uIGltcGFjdGVkOioqIFR3byBmaWxlcyBtb2RpZmllZDogYE9yZGVyRHRvLmphdmFgIChuZXcgZmllbGQpIGFuZCBgT3JkZXJSZXNvdXJjZS5qYXZhYCAobmV3IGVuZHBvaW50KQotICoqUmlzayBsZXZlbDoqKiBNRURJVU0KLSAqKlJlY29tbWVuZGVkIGFjdGlvbnM6KioKICAtIFZlcmlmeSBgb3JkZXJTdGF0dXNgIGlzIGNvcnJlY3RseSBwZXJzaXN0ZWQgYW5kIHJldHJpZXZlZCBmcm9tIHRoZSBkYXRhYmFzZSAoSlBBIGNvbHVtbiBtYXBwaW5nKQogIC0gRW5zdXJlIHRoZSBgQEpzb25JbmNsdWRlKE5PTl9OVUxMKWAgYW5ub3RhdGlvbiBwcmV2ZW50cyBzZXJpYWxpemF0aW9uIG9mIG51bGwgYG9yZGVyU3RhdHVzYCBmb3IgZXhpc3Rpbmcgb3JkZXJzCiAgLSBBZGQgYEdFVCAvYXBpL29yZGVycy9zdGF0dXMve3N0YXR1c31gIHRvIHRoZSBgb3JkZXItc2VydmljZS9zZXJ2aWNlLWdyYXBoLm1kYCBleHBvc2VkIGVuZHBvaW50cyB0YWJsZQogIC0gVmFsaWRhdGUgYEBOb3RCbGFua2AgY29uc3RyYWludCBpcyBjb3JyZWN0bHkgZW5mb3JjZWQgb24gdGhlIG5ldyBlbmRwb2ludCdzIHBhdGggdmFyaWFibGUKICAtIFdyaXRlIHVuaXQgdGVzdHMgZm9yIGBmaW5kQnlTdGF0dXNgIGZpbHRlcmluZyBsb2dpYyBhbmQgRFRPIGZpZWxkIG51bGwgaGFuZGxpbmcKICAtIFdyaXRlIGludGVncmF0aW9uIHRlc3RzIGNvdmVyaW5nIHRoZSBmdWxsIHJlcXVlc3QvcmVzcG9uc2UgY3ljbGUgZm9yIHRoZSBuZXcgZW5kcG9pbnQKCi0tLQoKIyMjIHBheW1lbnQtc2VydmljZSDigJQgW0RPV05TVFJFQU0gREVQRU5ERU5UXQotICoqUm9sZToqKiBEb3duc3RyZWFtIGRlcGVuZGVudAotICoqUmVhc29uIGltcGFjdGVkOioqIENhbGxzIGBHRVQgL29yZGVyLXNlcnZpY2UvYXBpL29yZGVycy97b3JkZXJJZH1gIHZpYSBgUGF5bWVudFNlcnZpY2VJbXBsYCB1c2luZyBgUmVzdFRlbXBsYXRlIChATG9hZEJhbGFuY2VkKWA7IHRoZSByZXNwb25zZSBEVE8gbm93IGluY2x1ZGVzIHRoZSBuZXcgYG9yZGVyU3RhdHVzYCBmaWVsZC4KLSAqKlJpc2sgbGV2ZWw6KiogTE9XCi0gKipBZmZlY3RlZCBjbGllbnQgbWV0aG9kczoqKgogIC0gYFBheW1lbnRTZXJ2aWNlSW1wbC5nZXRPcmRlcihJbnRlZ2VyIG9yZGVySWQpYCDigJQgUmVzdFRlbXBsYXRlIGNhbGwgdG8gYE9SREVSLVNFUlZJQ0Uvb3JkZXItc2VydmljZS9hcGkvb3JkZXJzL3tvcmRlcklkfWAKLSAqKlJlY29tbWVuZGVkIGFjdGlvbnM6KioKICAtIFZlcmlmeSB0aGF0IEphY2tzb24gZGVzZXJpYWxpemF0aW9uIGluIHBheW1lbnQtc2VydmljZSBoYW5kbGVzIHRoZSBuZXcgYG9yZGVyU3RhdHVzYCBmaWVsZCB3aXRob3V0IGVycm9yICh1bmtub3duIHByb3BlcnR5IGNvbmZpZ3VyYXRpb24pCiAgLSBDb25maXJtIHRoYXQgYFBheW1lbnRTZXJ2aWNlSW1wbGAgZG9lcyBub3QgZmFpbCB3aGVuIGBvcmRlclN0YXR1c2AgaXMgYWJzZW50IChudWxsKSBmb3Igb2xkZXIgb3JkZXJzCiAgLSBSdW4gY29uc3VtZXItY29udHJhY3QgUGFjdCB0ZXN0cyBhZ2FpbnN0IHRoZSB1cGRhdGVkIG9yZGVyLXNlcnZpY2UgcHJvdmlkZXIKICAtIE5vIGNvZGUgY2hhbmdlcyByZXF1aXJlZCBpZiBKYWNrc29uIGlzIGNvbmZpZ3VyZWQgd2l0aCBgRkFJTF9PTl9VTktOT1dOX1BST1BFUlRJRVM9ZmFsc2VgIChTcHJpbmcgQm9vdCBkZWZhdWx0KQoKLS0tCgojIyMgc2hpcHBpbmctc2VydmljZSDigJQgW0RPV05TVFJFQU0gREVQRU5ERU5UXQotICoqUm9sZToqKiBEb3duc3RyZWFtIGRlcGVuZGVudAotICoqUmVhc29uIGltcGFjdGVkOioqIENhbGxzIGBHRVQgL29yZGVyLXNlcnZpY2UvYXBpL29yZGVycy97b3JkZXJJZH1gIHZpYSBgT3JkZXJJdGVtU2VydmljZUltcGxgIHVzaW5nIGBSZXN0VGVtcGxhdGUgKEBMb2FkQmFsYW5jZWQpYDsgdGhlIHJlc3BvbnNlIERUTyBub3cgaW5jbHVkZXMgYG9yZGVyU3RhdHVzYC4KLSAqKlJpc2sgbGV2ZWw6KiogTE9XCi0gKipBZmZlY3RlZCBjbGllbnQgbWV0aG9kczoqKgogIC0gYE9yZGVySXRlbVNlcnZpY2VJbXBsLmdldE9yZGVyKEludGVnZXIgb3JkZXJJZClgIOKAlCBSZXN0VGVtcGxhdGUgY2FsbCB0byBgT1JERVItU0VSVklDRS9vcmRlci1zZXJ2aWNlL2FwaS9vcmRlcnMve29yZGVySWR9YAotICoqUmVjb21tZW5kZWQgYWN0aW9uczoqKgogIC0gVmVyaWZ5IEphY2tzb24gZGVzZXJpYWxpemF0aW9uIHRvbGVyYW5jZSBmb3IgdGhlIG5ldyBgb3JkZXJTdGF0dXNgIGZpZWxkCiAgLSBDb25maXJtIG5vIG51bGwtcG9pbnRlciBzY2VuYXJpb3MgYXJpc2Ugd2hlbiBgb3JkZXJTdGF0dXNgIGlzIGFic2VudCBmb3Igb2xkZXIgb3JkZXIgcmVjb3JkcwogIC0gUnVuIGNvbnN1bWVyLWNvbnRyYWN0IFBhY3QgdGVzdHMgYWdhaW5zdCB1cGRhdGVkIG9yZGVyLXNlcnZpY2UgcHJvdmlkZXIKICAtIENvbnNpZGVyIHdoZXRoZXIgYG9yZGVyU3RhdHVzYCBzaG91bGQgYmUgdXNlZCBpbiBzaGlwcGluZyBsb2dpYyAoZS5nLiwgcmVqZWN0IHNoaXBwaW5nIGNyZWF0aW9uIGlmIHN0YXR1cyBpcyBgQ0FOQ0VMTEVEYCkKCi0tLQoKIyMjIHByb3h5LWNsaWVudCDigJQgW0RPV05TVFJFQU0gREVQRU5ERU5UXQotICoqUm9sZToqKiBEb3duc3RyZWFtIGRlcGVuZGVudAotICoqUmVhc29uIGltcGFjdGVkOioqIGBPcmRlckNsaWVudFNlcnZpY2VgIEZlaWduQ2xpZW50IHByb3hpZXMgYWxsIG9yZGVyLXNlcnZpY2UgZW5kcG9pbnRzIGluY2x1ZGluZyBgR0VUIC9hcGkvb3JkZXJzL3tvcmRlcklkfWA7IHRoZSByZXNwb25zZSBub3cgaW5jbHVkZXMgYG9yZGVyU3RhdHVzYC4gQWRkaXRpb25hbGx5LCB0aGUgbmV3IGBHRVQgL2FwaS9vcmRlcnMvc3RhdHVzL3tzdGF0dXN9YCBlbmRwb2ludCBpcyBub3QgeWV0IG1hcHBlZCBpbiB0aGUgRmVpZ25DbGllbnQsIG1lYW5pbmcgcHJveHkgY29uc3VtZXJzIGNhbm5vdCByZWFjaCB0aGlzIGVuZHBvaW50LgotICoqUmlzayBsZXZlbDoqKiBNRURJVU0KLSAqKkFmZmVjdGVkIGNsaWVudCBtZXRob2RzOioqCiAgLSBgT3JkZXJDbGllbnRTZXJ2aWNlLmZpbmRCeUlkKFN0cmluZyBvcmRlcklkKWAg4oCUIEZlaWduQ2xpZW50IEdFVCBgL29yZGVyLXNlcnZpY2UvYXBpL29yZGVycy97b3JkZXJJZH1gIOKGkiByZWNlaXZlcyBuZXcgYG9yZGVyU3RhdHVzYCBmaWVsZAogIC0gYE9yZGVyQ2xpZW50U2VydmljZWAgKG1pc3NpbmcpIOKAlCBubyBtZXRob2QgZm9yIGBHRVQgL29yZGVyLXNlcnZpY2UvYXBpL29yZGVycy9zdGF0dXMve3N0YXR1c31gCi0gKipSZWNvbW1lbmRlZCBhY3Rpb25zOioqCiAgLSBBZGQgYGZpbmRCeVN0YXR1cyhTdHJpbmcgc3RhdHVzKWAgbWV0aG9kIHRvIGBPcmRlckNsaWVudFNlcnZpY2VgIEZlaWduQ2xpZW50IG1hcHBlZCB0byBgR0VUIC9vcmRlci1zZXJ2aWNlL2FwaS9vcmRlcnMvc3RhdHVzL3tzdGF0dXN9YAogIC0gRXhwb3NlIHRoZSBuZXcgZW5kcG9pbnQgdGhyb3VnaCB0aGUgcHJveHk6IGBHRVQIC9hcHAvYXBpL29yZGVycy9zdGF0dXMve3N0YXR1c31gIGluIGBPcmRlckNvbnRyb2xsZXJgCiAgLSBVcGRhdGUgYHByb3h5LWNsaWVudC9zZXJ2aWNlLWdyYXBoLm1kYCB0byByZWZsZWN0IHRoZSBuZXcgcHJveHkgZW5kcG9pbnQKICAtIFZlcmlmeSBGZWlnbkNsaWVudCBgT3JkZXJEdG9gIG1vZGVsIGluY2x1ZGVzIGBvcmRlclN0YXR1c2AgZmllbGQgKHByb3h5LWNsaWVudCBtYXkgaGF2ZSBpdHMgb3duIERUTyBjb3B5KQogIC0gUnVuIGNvbnN1bWVyLWNvbnRyYWN0IFBhY3QgdGVzdHMgdG8gY29uZmlybSBgb3JkZXJTdGF0dXNgIGRlc2VyaWFsaXphdGlvbiB3b3JrcyBlbmQtdG8tZW5kCgotLS0KCiMjIEJyZWFraW5nIENoYW5nZXMKCk5vIGJyZWFraW5nIGNoYW5nZXMgZGV0ZWN0ZWQgaW4gdGhpcyBQUi4KCkJvdGggY2hhbmdlcyBhcmUgcHVyZWx5IGFkZGl0aXZlOiB0aGUgYG9yZGVyU3RhdHVzYCBmaWVsZCBpcyBhbm5vdGF0ZWQgYEBKc29uSW5jbHVkZShOT05fTlVMTClgIChudWxsIHZhbHVlcyBhcmUgb21pdHRlZCBmcm9tIHJlc3BvbnNlcywgcHJlc2VydmluZyBiYWNrd2FyZCBjb21wYXRpYmlsaXR5KSwgYW5kIHRoZSBuZXcgYEdFVCAvYXBpL29yZGVycy9zdGF0dXMve3N0YXR1c31gIGVuZHBvaW50IGlzIGEgbmV0IGFkZGl0aW9uIHRoYXQgZG9lcyBub3QgYWx0ZXIgZXhpc3RpbmcgZW5kcG9pbnQgcGF0aHMgb3IgcmVzcG9uc2Ugc2NoZW1hcy4KCi0tLQoKIyMgRGVwbG95bWVudCBSZWNvbW1lbmRhdGlvbgoKMS4gKipvcmRlci1zZXJ2aWNlKiog4oCUIERlcGxveSBmaXJzdDsgaXQgaXMgdGhlIHByb3ZpZGVyLiBUaGUgbmV3IGZpZWxkIGlzIG51bGwtc2FmZSAoYEBKc29uSW5jbHVkZShOT05fTlVMTClgKSwgc28gZXhpc3RpbmcgY29uc3VtZXJzIHdpbGwgbm90IHNlZSB0aGUgZmllbGQgdW50aWwgZGF0YSBoYXMgaXQgcG9wdWxhdGVkLiBUaGUgbmV3IGVuZHBvaW50IGlzIGFkZGl0aXZlIGFuZCBkb2VzIG5vdCBhZmZlY3QgZXhpc3Rpbmcgcm91dGVzLgoyLiAqKnBheW1lbnQtc2VydmljZSoqIOKAlCBEZXBsb3kgYWZ0ZXIgb3JkZXItc2VydmljZSBpcyBoZWFsdGh5OyBubyBjb2RlIGNoYW5nZSByZXF1aXJlZCB1bmxlc3MgY29uc3VtZXItY29udHJhY3QgdGVzdHMgcmV2ZWFsIGEgZGVzZXJpYWxpemF0aW9uIGlzc3VlLgozLiAqKnNoaXBwaW5nLXNlcnZpY2UqKiDigJQgRGVwbG95IGFmdGVyIG9yZGVyLXNlcnZpY2UgaXMgaGVhbHRoeTsgbm8gY29kZSBjaGFuZ2UgcmVxdWlyZWQgdW5sZXNzIGNvbnRyYWN0IHRlc3RzIHN1cmZhY2UgYW4gaXNzdWUuCjQuICoqcHJveHktY2xpZW50Kiog4oCUIERlcGxveSBsYXN0OyByZXF1aXJlcyBjb2RlIGNoYW5nZXMgdG8gYWRkIGBmaW5kQnlTdGF0dXNgIHRvIGBPcmRlckNsaWVudFNlcnZpY2VgIEZlaWduQ2xpZW50IGFuZCBleHBvc2UgdGhlIG5ldyBwcm94eSBlbmRwb2ludCBiZWZvcmUgdGhpcyBkZXBsb3ltZW50Lgo=
+# Impact Analysis Report
+**PR:** #3 | **Branch:** test/service-discovery-agent-demo | **Repo:** ecommerce-microservice-backend-app
+**Source PR URL:** https://github.com/abhisheksingh-0710/ecommerce-microservice-backend-app/pull/3
+**Generated:** 2026-05-14T00:00:00Z
+
+## Executive Summary
+
+PR #3 (`test/service-discovery-agent-demo`) modifies **order-service** across two layers: the `OrderDto` DTO gains a new nullable `orderStatus` (String) field, and `OrderResource` gains a new `GET /api/orders/status/{status}` endpoint for filtering orders by lifecycle status. Three downstream services — **payment-service**, **shipping-service**, and **proxy-client** — consume order-service endpoints via RestTemplate or FeignClient and will receive the new `orderStatus` field in responses. No existing fields were removed and no existing endpoint paths were changed, so **there are no breaking changes** in this PR. A total of **14 test cases** are recommended across unit, integration, provider-contract, and consumer-contract categories.
+
+---
+
+## Changed Files
+
+### `order-service/src/main/java/com/selimhorri/app/dto/OrderDto.java`
+- **Service:** order-service
+- **Layer:** dto
+- **Summary:** Added a new nullable `orderStatus` String field annotated with `@JsonInclude(Include.NON_NULL)` to represent the order lifecycle state.
+- **Field changes:**
+
+  | Field | Type | Change Type | Risk |
+  |-------|------|-------------|------|
+  | orderStatus | String | Added | Downstream consumers receive this field in all order responses; if their local OrderDto model lacks the field, deserialization will silently ignore it (Jackson default) — low risk, but consumer-contract tests needed to confirm |
+
+### `order-service/src/main/java/com/selimhorri/app/resource/OrderResource.java`
+- **Service:** order-service
+- **Layer:** controller
+- **Summary:** Added new `GET /api/orders/status/{status}` endpoint that filters the full order list by lifecycle status using a case-insensitive match on `orderStatus`.
+- **API changes:**
+
+  | Method | Path | Change Type | Notes |
+  |--------|------|-------------|-------|
+  | GET | /api/orders/status/{status} | Added | New endpoint for status-based filtering; implementation streams findAll() in-memory — no DB-level filtering; valid statuses: PENDING, CONFIRMED, SHIPPED, DELIVERED, CANCELLED |
+
+---
+
+## Dependency Graph
+
+```
+order-service  [DIRECTLY CHANGED]
+  |-- orderStatus field added to OrderDto
+  |-- GET /api/orders/status/{status} endpoint added
+  |
+  +---> payment-service  [CONSUMER-CONTRACT RISK]
+  |         PaymentServiceImpl calls GET /order-service/api/orders/{orderId}
+  |         via RestTemplate (@LoadBalanced)
+  |         Will now receive orderStatus in OrderDto responses
+  |
+  +---> shipping-service  [CONSUMER-CONTRACT RISK]
+  |         OrderItemServiceImpl calls GET /order-service/api/orders/{orderId}
+  |         via RestTemplate (@LoadBalanced)
+  |         Will now receive orderStatus in OrderDto responses
+  |
+  +---> proxy-client  [CONSUMER-CONTRACT RISK]
+  |         OrderClientService FeignClient calls /order-service/api/orders/**
+  |         Will now receive orderStatus in all OrderDto responses
+  |         New endpoint GET /api/orders/status/{status} may need a new FeignClient method
+  |
+  +---> api-gateway  [TRANSPARENT PROXY - LOW RISK]
+            Routes /order-service/** transparently via Spring Cloud Gateway
+            No deserialization; no contract risk from this change
+```
+
+---
+
+## Service-by-Service Impact
+
+### order-service — [DIRECTLY CHANGED]
+- **Role:** Directly changed
+- **Reason impacted:** Source of all modifications in this PR
+- **Risk level:** MEDIUM
+- **Recommended actions:**
+  - Verify `orderStatus` is persisted in the database and populated correctly for existing orders (migration may be needed for historical records)
+  - Confirm `findByStatus()` performance — current implementation calls `findAll()` and filters in-memory; may need a DB-level query for large datasets
+  - Ensure the new endpoint is documented in OpenAPI/Swagger if used
+  - Add validation for allowed status values (PENDING, CONFIRMED, SHIPPED, DELIVERED, CANCELLED) or handle unknown status gracefully (currently returns empty list)
+
+### payment-service — [DOWNSTREAM DEPENDENT]
+- **Role:** Downstream dependent
+- **Reason impacted:** `PaymentServiceImpl` calls `GET /order-service/api/orders/{orderId}` via `RestTemplate (@LoadBalanced)` and deserializes the response into an `OrderDto`. The response will now include the `orderStatus` field.
+- **Risk level:** LOW
+- **Affected client methods:**
+  - `PaymentServiceImpl` — `restTemplate.getForObject("/order-service/api/orders/{orderId}", OrderDto.class, orderId)`
+- **Recommended actions:**
+  - Verify payment-service has its own `OrderDto` model class or uses a shared library; if it has a local copy, add `orderStatus` field to it
+  - If using Jackson with `DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES=true`, the new field will cause a failure — check configuration
+  - Run consumer-contract test to confirm deserialization is safe with and without `orderStatus` present
+
+### shipping-service — [DOWNSTREAM DEPENDENT]
+- **Role:** Downstream dependent
+- **Reason impacted:** `OrderItemServiceImpl` calls `GET /order-service/api/orders/{orderId}` via `RestTemplate (@LoadBalanced)` and deserializes the response into an `OrderDto`. The response will now include `orderStatus`.
+- **Risk level:** LOW
+- **Affected client methods:**
+  - `OrderItemServiceImpl` — `restTemplate.getForObject("/order-service/api/orders/{orderId}", OrderDto.class, orderId)`
+- **Recommended actions:**
+  - Same as payment-service: verify local `OrderDto` model and Jackson configuration
+  - Shipping logic may want to use `orderStatus` to conditionally trigger shipping actions — review business logic for new opportunity
+
+### proxy-client — [DOWNSTREAM DEPENDENT]
+- **Role:** Downstream dependent
+- **Reason impacted:** `OrderClientService` FeignClient calls `/order-service/api/orders/**` endpoints. It will receive `orderStatus` in all `OrderDto` responses. Additionally, the new `GET /api/orders/status/{status}` endpoint is not yet exposed via `OrderClientService`, meaning clients of proxy-client cannot filter orders by status through the proxy.
+- **Risk level:** MEDIUM
+- **Affected client methods:**
+  - `OrderClientService.findById()` — FeignClient `GET /order-service/api/orders/{orderId}`
+  - `OrderClientService.findAll()` — FeignClient `GET /order-service/api/orders`
+  - `OrderController.findById()` — proxy-client controller that delegates to `OrderClientService`
+- **Recommended actions:**
+  - Add `orderStatus` field to the `OrderDto` model used in proxy-client (if it has a local copy)
+  - Consider adding `OrderClientService.findByStatus(String status)` FeignClient method to expose the new endpoint through the proxy
+  - Consider adding `GET /app/api/orders/status/{status}` to `OrderController` in proxy-client to expose this capability to UI/external consumers
+
+### api-gateway — [TRANSPARENT PROXY - NOT IMPACTED]
+- **Role:** Transparent proxy
+- **Reason impacted:** Routes all `/order-service/**` traffic via Spring Cloud Gateway without deserializing payloads
+- **Risk level:** NONE
+- **Recommended actions:** No action needed. The new endpoint is automatically routed.
+
+---
+
+## Breaking Changes
+
+No breaking changes detected in this PR.
+
+- No existing fields were removed from `OrderDto`
+- No existing endpoint paths were changed or removed
+- The new `orderStatus` field uses `@JsonInclude(NON_NULL)` so it is absent for orders without a status, maintaining backward compatibility
+- The new `GET /api/orders/status/{status}` endpoint is purely additive
+
+---
+
+## Deployment Recommendation
+
+1. **order-service** — Deploy first; it is the provider. Backward-compatible change: existing consumers continue to work without code changes (Jackson ignores unknown fields by default).
+2. **payment-service** — Deploy after order-service is confirmed healthy. Update local `OrderDto` model if applicable.
+3. **shipping-service** — Deploy after order-service is confirmed healthy. Update local `OrderDto` model if applicable.
+4. **proxy-client** — Deploy last. Optionally add `findByStatus` FeignClient method and corresponding controller endpoint to expose new capability to external consumers.
+5. **api-gateway** — No deployment needed.

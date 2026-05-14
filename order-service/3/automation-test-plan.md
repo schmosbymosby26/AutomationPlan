@@ -1,1 +1,304 @@
-IyBBdXRvbWF0aW9uIFRlc3QgUGxhbgoqKlBSOioqICMzIHwgKipCcmFuY2g6KiogdGVzdC9zZXJ2aWNlLWRpc2NvdmVyeS1hZ2VudC1kZW1vIHwgKipSZXBvOioqIGVjb21tZXJjZS1taWNyb3NlcnZpY2UtYmFja2VuZC1hcHAKKipTb3VyY2UgUFIgVVJMOioqIGh0dHBzOi8vZ2l0aHViLmNvbS9hYmhpc2hla3NpbmdoLTA3MTAvZWNvbW1lcmNlLW1pY3Jvc2VydmljZS1iYWNrZW5kLWFwcC9wdWxsLzMKKipHZW5lcmF0ZWQ6KiogMjAyNi0wNS0xNFQwMDowMDowMFoKKipUb3RhbCBUZXN0IENhc2VzOioqIDE1CgotLS0KCiMjIFRlc3QgUGxhbiBTdW1tYXJ5Cgp8IFNlcnZpY2UgfCBSb2xlIHwgVGVzdCBUeXBlcyB8IFRlc3QgQ2FzZSBDb3VudCB8IFByaW9yaXR5IHwKfC0tLS0tLS0tLXwtLS0tLS18LS0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLS0tfC0tLS0tLS0tLS18Cnwgb3JkZXItc2VydmljZSB8IERpcmVjdGx5IENoYW5nZWQgfCB1bml0LCBpbnRlZ3JhdGlvbiwgcHJvdmlkZXItY29udHJhY3QgfCA5IHwgUDEgfAp8IHBheW1lbnQtc2VydmljZSB8IERvd25zdHJlYW0gRGVwZW5kZW50IHwgY29uc3VtZXItY29udHJhY3QgfCAyIHwgUDEgfAp8IHNoaXBwaW5nLXNlcnZpY2UgfCBEb3duc3RyZWFtIERlcGVuZGVudCB8IGNvbnN1bWVyLWNvbnRyYWN0IHwgMiB8IFAxIHwKfCBwcm94eS1jbGllbnQgfCBEb3duc3RyZWFtIERlcGVuZGVudCB8IGNvbnN1bWVyLWNvbnRyYWN0IHwgMiB8IFAxIHwKCi0tLQoKIyMgVGVzdCBDYXNlcyBieSBTZXJ2aWNlCgotLS0KIyMjIG9yZGVyLXNlcnZpY2UKCiMjIyMgVEMtT1JELTAwMTogT3JkZXJEdG8gb3JkZXJTdGF0dXMgZmllbGQgZGVmYXVsdCBudWxsIHdoZW4gbm90IHNldAoKfCBGaWVsZCB8IFZhbHVlIHwKfC0tLS0tLS18LS0tLS0tLXwKfCAqKklEKiogfCBUQy1PUkQtMDAxIHwKfCAqKlR5cGUqKiB8IHVuaXQgfAp8ICoqUHJpb3JpdHkqKiB8IFAxIHwKfCAqKkZsb3cqKiB8IE9yZGVyIERUTyBjb25zdHJ1Y3Rpb24gfAp8ICoqVHJpZ2dlcioqIHwgYG9yZGVyU3RhdHVzYCBmaWVsZCBhZGRlZCB0byBgT3JkZXJEdG9gOyBudWxsIGhhbmRsaW5nIG11c3QgYmUgdmVyaWZpZWQgfAp8ICoqUHJlY29uZGl0aW9ucyoqIHwgb3JkZXItc2VydmljZSBjb21waWxlZCB3aXRoIG5ldyBgT3JkZXJEdG9gIHwKfCAqKlRlc3QgU3RlcHMqKiB8IDEuIEluc3RhbnRpYXRlIGBPcmRlckR0b2AgdXNpbmcgYnVpbGRlciB3aXRob3V0IGNhbGxpbmcgYC5vcmRlclN0YXR1cyguLi4pYCA8YnI+Mi4gQXNzZXJ0IGBvcmRlckR0by5nZXRPcmRlclN0YXR1cygpYCByZXR1cm5zIGBudWxsYCA8YnI+My4gU2VyaWFsaXplIERUTyB0byBKU09OIHZpYSBPYmplY3RNYXBwZXIgPGJyPjQuIEFzc2VydCBzZXJpYWxpemVkIEpTT04gZG9lcyBOT1QgY29udGFpbiBgb3JkZXJTdGF0dXNgIGtleSAoZHVlIHRvIGBASnNvbkluY2x1ZGUoTk9OX05VTEwpYCkgfAp8ICoqRXhwZWN0ZWQgUmVzdWx0KiogfCBgb3JkZXJTdGF0dXNgIGlzIGBudWxsYDsgYWJzZW50IGZyb20gc2VyaWFsaXplZCBKU09OIHwKfCAqKkF1dG9tYXRpb24gTm90ZXMqKiB8IEFkZCB0byBgT3JkZXJEdG9UZXN0LmphdmFgIGluIGBzcmMvdGVzdC9qYXZhL2NvbS9zZWxpbWhvcnJpL2FwcC9kdG8vYDsgdXNlIHN0YW5kYXJkIEpVbml0IDUgKyBKYWNrc29uIE9iamVjdE1hcHBlciB8CgotLS0KCiMjIyMgVEMtT1JELTAwMjogT3JkZXJEdG8gb3JkZXJTdGF0dXMgYWNjZXB0cyB2YWxpZCBsaWZlY3ljbGUgc3RyaW5nIHZhbHVlcwoKfCBGaWVsZCB8IFZhbHVlIHwKfC0tLS0tLS18LS0tLS0tLXwKfCAqKklEKiogfCBUQy1PUkQtMDAyIHwKfCAqKlR5cGUqKiB8IHVuaXQgfAp8ICoqUHJpb3JpdHkqKiB8IFAxIHwKfCAqKkZsb3cqKiB8IE9yZGVyIERUTyB2YWxpZGF0aW9uIHwKfCAqKlRyaWdnZXIqKiB8IGBvcmRlclN0YXR1c2AgZmllbGQgYWRkZWQgd2l0aCBkb2N1bWVudGVkIGFsbG93ZWQgdmFsdWVzOiBQRU5ESU5HLCBDT05GSVJNRUQsIFNISVBQRUQsIERFTElWRVJFRCwgQ0FOQ0VMTEVEIHwKfCAqKlByZWNvbmRpdGlvbnMqKiB8IG9yZGVyLXNlcnZpY2UgY29tcGlsZWQgd2l0aCBuZXcgYE9yZGVyRHRvYCB8CnwgKipUZXN0IFN0ZXBzKiogfCAxLiBGb3IgZWFjaCB2YWx1ZSBpbiBgWyJQRU5ESU5HIiwgIkNPTkZJUk1FRCIsICJTSElQUEVEIiwgIkRFTElWRVJFRCIsICJDQU5DRUxMRUQiXWAgPGJyPjIuIEJ1aWxkIGBPcmRlckR0b2Agd2l0aCBgLm9yZGVyU3RhdHVzKHZhbHVlKWAgPGJyPjMuIEFzc2VydCBgZ2V0T3JkZXJTdGF0dXMoKWAgZXF1YWxzIHRoZSB2YWx1ZSA8YnI+NC4gU2VyaWFsaXplIHRvIEpTT047IGFzc2VydCBKU09OIGNvbnRhaW5zIGAib3JkZXJTdGF0dXMiOiI8dmFsdWU+ImAgfAp8ICoqRXhwZWN0ZWQgUmVzdWx0KiogfCBBbGwgZml2ZSBzdGF0dXMgc3RyaW5ncyBzdG9yZWQgYW5kIHNlcmlhbGl6ZWQgY29ycmVjdGx5IHwKfCAqKkF1dG9tYXRpb24gTm90ZXMqKiB8IFVzZSBgQFBhcmFtZXRlcml6ZWRUZXN0YCB3aXRoIGBAVmFsdWVTb3VyY2VgIGluIGBPcmRlckR0b1Rlc3QuamF2YWA7IHZlcmlmeSBKU09OIHNlcmlhbGl6YXRpb24gd2l0aCBKYWNrc29uIE9iamVjdE1hcHBlciB8CgotLS0KCiMjIyMgVEMtT1JELTAwMzogT3JkZXJSZXNvdXJjZS5maW5kQnlTdGF0dXMgZmlsdGVycyBvcmRlcnMgYnkgc3RhdHVzIGNvcnJlY3RseQoKfCBGaWVsZCB8IFZhbHVlIHwKfC0tLS0tLS18LS0tLS0tLXwKfCAqKklEKiogfCBUQy1PUkQtMDAzIHwKfCAqKlR5cGUqKiB8IHVuaXQgfAp8ICoqUHJpb3JpdHkqKiB8IFAxIHwKfCAqKkZsb3cqKiB8IE9yZGVyIHN0YXR1cyBmaWx0ZXJpbmcgfAp8ICoqVHJpZ2dlcioqIHwgTmV3IGBHRVQgL2FwaS9vcmRlcnMvc3RhdHVzL3tzdGF0dXN9YCBlbmRwb2ludCBhZGRlZCBpbiBgT3JkZXJSZXNvdXJjZWAgfAp8ICoqUHJlY29uZGl0aW9ucyoqIHwgYE9yZGVyU2VydmljZWAgbW9jayBhdmFpbGFibGU7IHRlc3Qgb3JkZXJzIHNlZWRlZCBpbiBtb2NrIHdpdGggbWl4ZWQgc3RhdHVzZXMgfAp8ICoqVGVzdCBTdGVwcyoqIHwgMS4gQ3JlYXRlIG1vY2sgYE9yZGVyU2VydmljZWA7IGNvbmZpZ3VyZSBgZmluZEFsbCgpYCB0byByZXR1cm4gYFtPcmRlckR0byhzdGF0dXM9UEVORElORyksIE9yZGVyRHRvKHN0YXR1cz1TSElQUEVEKSwgT3JkZXJEdG8oc3RhdHVzPVBFTkRJTkcpXWAgPGJyPjIuIEluamVjdCBtb2NrIGludG8gYE9yZGVyUmVzb3VyY2VgIDxicj4zLiBDYWxsIGBvcmRlclJlc291cmNlLmZpbmRCeVN0YXR1cygiUEVORElORyIpYCA8YnI+NC4gQXNzZXJ0IEhUVFAgMjAwIDxicj41LiBBc3NlcnQgcmV0dXJuZWQgY29sbGVjdGlvbiBjb250YWlucyBleGFjdGx5IDIgb3JkZXJzIDxicj42LiBBc3NlcnQgYWxsIHJldHVybmVkIG9yZGVycyBoYXZlIGBvcmRlclN0YXR1cyA9PSAiUEVORElORyJgIHwKfCAqKkV4cGVjdGVkIFJlc3VsdCoqIHwgT25seSBQRU5ESU5HIG9yZGVycyByZXR1cm5lZCB8CnwgKipBdXRvbWF0aW9uIE5vdGVzKiogfCBBZGQgdG8gYE9yZGVyUmVzb3VyY2VUZXN0LmphdmFgOyB1c2UgYEBFeHRlbmRXaXRoKE1vY2tpdG9FeHRlbnNpb24uY2xhc3MpYCB3aXRoIGBASW5qZWN0TW9ja3NgIC8gYEBNb2NrYCB8CgotLS0KCiMjIyMgVEMtT1JELTAwNDogT3JkZXJSZXNvdXJjZS5maW5kQnlTdGF0dXMgcmV0dXJucyBlbXB0eSBsaXN0IGZvciB1bmtub3duIHN0YXR1cwoKfCBGaWVsZCB8IFZhbHVlIHwKfC0tLS0tLS18LS0tLS0tLXwKfCAqKklEKiogfCBUQy1PUkQtMDA0IHwKfCAqKlR5cGUqKiB8IHVuaXQgfAp8ICoqUHJpb3JpdHkqKiB8IFAyIHwKfCAqKkZsb3cqKiB8IE9yZGVyIHN0YXR1cyBmaWx0ZXJpbmcg4oCUIGVtcHR5IHJlc3VsdCB8CnwgKipUcmlnZ2VyKiogfCBOZXcgYEdFVCAvYXBpL29yZGVycy9zdGF0dXMve3N0YXR1c31gIGVuZHBvaW50OyBlZGdlIGNhc2UgZm9yIG5vbi1tYXRjaGluZyBzdGF0dXMgfAp8ICoqUHJlY29uZGl0aW9ucyoqIHwgYE9yZGVyU2VydmljZWAgbW9jayBjb25maWd1cmVkIHRvIHJldHVybiBrbm93bi1zdGF0dXMgb3JkZXJzIHwKfCAqKlRlc3QgU3RlcHMqKiB8IDEuIE1vY2sgYG9yZGVyU2VydmljZS5maW5kQWxsKClgIHJldHVybmluZyBgW09yZGVyRHRvKHN0YXR1cz1QRU5ESU5HKSwgT3JkZXJEdG8oc3RhdHVzPUNPTkZJUk1FRCldYCA8YnI+Mi4gQ2FsbCBgb3JkZXJSZXNvdXJjZS5maW5kQnlTdGF0dXMoIlVOS05PV05fU1RBVFVTIilgIDxicj4zLiBBc3NlcnQgSFRUUCAyMDAgPGJyPjQuIEFzc2VydCByZXR1cm5lZCBjb2xsZWN0aW9uIGlzIGVtcHR5IHwKfCAqKkV4cGVjdGVkIFJlc3VsdCoqIHwgRW1wdHkgYER0b0NvbGxlY3Rpb25SZXNwb25zZWAgd2l0aCBIVFRQIDIwMCB8CnwgKipBdXRvbWF0aW9uIE5vdGVzKiogfCBBZGQgdG8gYE9yZGVyUmVzb3VyY2VUZXN0LmphdmFgOyBzYW1lIHRlc3QgY2xhc3MgYXMgVEMtT1JELTAwMyB8CgotLS0KCiMjIyMgVEMtT1JELTAwNTogR0VUIC9hcGkvb3JkZXJzL3tvcmRlcklkfSByZXNwb25zZSBpbmNsdWRlcyBvcmRlclN0YXR1cyBmaWVsZAoKfCBGaWVsZCB8IFZhbHVlIHwKfC0tLS0tLS18LS0tLS0tLXwKfCAqKklEKiogfCBUQy1PUkQtMDA1IHwKfCAqKlR5cGUqKiB8IGludGVncmF0aW9uIHwKfCAqKlByaW9yaXR5KiogfCBQMSB8CnwgKipGbG93KiogfCBPcmRlciByZXRyaWV2YWwgZmxvdyB8CnwgKipUcmlnZ2VyKiogfCBgb3JkZXJTdGF0dXNgIGZpZWxkIGFkZGVkIHRvIGBPcmRlckR0b2A7IG11c3QgYmUgaW5jbHVkZWQgaW4gQVBJIHJlc3BvbnNlcyB8CnwgKipQcmVjb25kaXRpb25zKiogfCBvcmRlci1zZXJ2aWNlIHJ1bm5pbmcgd2l0aCBgQFNwcmluZ0Jvb3RUZXN0YDsgVGVzdENvbnRhaW5lcnMgTXlTUUwgKG9yIEgyIGluLW1lbW9yeSk7IGFuIG9yZGVyIHJvdyB3aXRoIGBvcmRlcl9zdGF0dXM9J0NPTkZJUk1FRCdgIHNlZWRlZCB8CnwgKipUZXN0IFN0ZXBzKiogfCAxLiBTZWVkIGRhdGFiYXNlIHdpdGggb25lIG9yZGVyIHdpdGggYG9yZGVyU3RhdHVzID0gIkNPTkZJUk1FRCJgIDxicj4yLiBDYWxsIGBHRVQgL2FwaS9vcmRlcnMve29yZGVySWR9YCB2aWEgYE1vY2tNdmNgIG9yIGBUZXN0UmVzdFRlbXBsYXRlYCA8YnI+My4gQXNzZXJ0IEhUVFAgMjAwIDxicj40LiBBc3NlcnQgcmVzcG9uc2UgYm9keSBKU09OIGNvbnRhaW5zIGAib3JkZXJTdGF0dXMiOiJDT05GSVJNRUQiYCA8YnI+NS4gQXNzZXJ0IGFsbCBwcmUtZXhpc3RpbmcgZmllbGRzIChgb3JkZXJJZGAsIGBvcmRlckRhdGVgLCBgb3JkZXJEZXNjYCwgYG9yZGVyRmVlYCwgYGNhcnRgKSBhcmUgc3RpbGwgcHJlc2VudCB8CnwgKipFeHBlY3RlZCBSZXN1bHQqKiB8IFJlc3BvbnNlIGluY2x1ZGVzIGBvcmRlclN0YXR1c2A7IG5vIGV4aXN0aW5nIGZpZWxkcyBkcm9wcGVkIHwKfCAqKkF1dG9tYXRpb24gTm90ZXMqKiB8IEFkZCB0byBgT3JkZXJSZXNvdXJjZUludGVncmF0aW9uVGVzdC5qYXZhYDsgdXNlIGBAU3ByaW5nQm9vdFRlc3Qod2ViRW52aXJvbm1lbnQgPSBSQU5ET01fUE9SVClgICsgYEBBdXRvQ29uZmlndXJlTW9ja012Y2A7IHVzZSBUZXN0Q29udGFpbmVycyBmb3IgTXlTUUwgb3IgYGFwcGxpY2F0aW9uLXRlc3QucHJvcGVydGllc2Agd2l0aCBIMiB8CgotLS0KCiMjIyMgVEMtT1JELTAwNjogR0VUIC9hcGkvb3JkZXJzL3N0YXR1cy97c3RhdHVzfSByZXR1cm5zIGNvcnJlY3Qgb3JkZXJzCgp8IEZpZWxkIHwgVmFsdWUgfAp8LS0tLS0tLXwtLS0tLS0tfAp8ICoqSUQqKiB8IFRDLU9SRC0wMDYgfAp8ICoqVHlwZSoqIHwgaW50ZWdyYXRpb24gfAp8ICoqUHJpb3JpdHkqKiB8IFAxIHwKfCAqKkZsb3cqKiB8IE9yZGVyIHN0YXR1cyBmaWx0ZXJpbmcg4oCUIGZ1bGwgcmVxdWVzdC9yZXNwb25zZSBjeWNsZSB8CnwgKipUcmlnZ2VyKiogfCBOZXcgZW5kcG9pbnQgYEdFVCAvYXBpL29yZGVycy9zdGF0dXMve3N0YXR1c31gIGFkZGVkIHwKfCAqKlByZWNvbmRpdGlvbnMqKiB8IG9yZGVyLXNlcnZpY2UgcnVubmluZzsgREIgc2VlZGVkIHdpdGggMyBvcmRlcnM6IDIgd2l0aCBgb3JkZXJTdGF0dXM9J1BFTkRJTkcnYCwgMSB3aXRoIGBvcmRlclN0YXR1cz0nU0hJUFBFRCdgIHwKfCAqKlRlc3QgU3RlcHMqKiB8IDEuIFNlZWQgREIgd2l0aCAyIFBFTkRJTkcgb3JkZXJzIGFuZCAxIFNISVBQRUQgb3JkZXIgPGJyPjIuIENhbGwgYEdFVCAvYXBpL29yZGVycy9zdGF0dXMvUEVORElOR2AgPGJyPjMuIEFzc2VydCBIVFRQIDIwMCA8YnI+NC4gQXNzZXJ0IHJlc3BvbnNlIGJvZHkgYGNvbGxlY3Rpb25gIGNvbnRhaW5zIGV4YWN0bHkgMiBpdGVtcyA8YnI+NS4gQXNzZXJ0IGVhY2ggaXRlbSBoYXMgYCJvcmRlclN0YXR1cyI6IlBFTkRJTkciYCB8CnwgKipFeHBlY3RlZCBSZXN1bHQqKiB8IEV4YWN0bHkgMiBQRU5ESU5HIG9yZGVycyByZXR1cm5lZDsgU0hJUFBFRCBvcmRlciBleGNsdWRlZCB8CnwgKipBdXRvbWF0aW9uIE5vdGVzKiogfCBBZGQgdG8gYE9yZGVyUmVzb3VyY2VJbnRlZ3JhdGlvblRlc3QuamF2YWA7IHVzZSBgQFNxbGAgb3IgYEBCZWZvcmVFYWNoYCB0byBzZWVkIGRhdGE7IGNsZWFuIHVwIHdpdGggYEBBZnRlckVhY2hgIHwKCi0tLQoKIyMjIyBUQy1PUkQtMDA3OiBHRVQgL2FwaS9vcmRlcnMvc3RhdHVzL3tzdGF0dXN9IHdpdGggYmxhbmsgc3RhdHVzIHJldHVybnMgNDAwCgp8IEZpZWxkIHwgVmFsdWUgfAp8LS0tLS0tLXwtLS0tLS0tfAp8ICoqSUQqKiB8IFRDLU9SRC0wMDcgfAp8ICoqVHlwZSoqIHwgaW50ZWdyYXRpb24gfAp8ICoqUHJpb3JpdHkqKiB8IFAyIHwKfCAqKkZsb3cqKiB8IE9yZGVyIHN0YXR1cyBmaWx0ZXJpbmcg4oCUIGlucHV0IHZhbGlkYXRpb24gfAp8ICoqVHJpZ2dlcioqIHwgYEBOb3RCbGFua2AgY29uc3RyYWludCBvbiBgc3RhdHVzYCBwYXRoIHZhcmlhYmxlIGluIG5ldyBlbmRwb2ludCB8CnwgKipQcmVjb25kaXRpb25zKiogfCBvcmRlci1zZXJ2aWNlIHJ1bm5pbmcgd2l0aCBgQFNwcmluZ0Jvb3RUZXN0YCB8CnwgKipUZXN0IFN0ZXBzKiogfCAxLiBDYWxsIGBHRVQgL2FwaS9vcmRlcnMvc3RhdHVzLyUyMGAgKGVuY29kZWQgYmxhbmsvc3BhY2UpIDxicj4yLiBBc3NlcnQgSFRUUCA0MDAgPGJyPjMuIEFzc2VydCByZXNwb25zZSBib2R5IGNvbnRhaW5zIHZhbGlkYXRpb24gZXJyb3IgcmVmZXJlbmNpbmcgdGhlIGJsYW5rIGNvbnN0cmFpbnQgfAp8ICoqRXhwZWN0ZWQgUmVzdWx0KiogfCBIVFRQIDQwMCBCYWQgUmVxdWVzdCB3aXRoIHZhbGlkYXRpb24gZXJyb3IgbWVzc2FnZSB8CnwgKipBdXRvbWF0aW9uIE5vdGVzKiogfCBBZGQgdG8gYE9yZGVyUmVzb3VyY2VJbnRlZ3JhdGlvblRlc3QuamF2YWA7IHVzZSBNb2NrTXZjIGBwZXJmb3JtKGdldCguLi4pKS5hbmRFeHBlY3Qoc3RhdHVzKCkuaXNCYWRSZXF1ZXN0KCkpYCB8CgotLS0KCiMjIyMgVEMtT1JELTAwODogR0VUIC9hcGkvb3JkZXJzL3tvcmRlcklkfSBjb250cmFjdCBpbmNsdWRlcyBvcmRlclN0YXR1cyBpbiByZXNwb25zZSBzY2hlbWEKCnwgRmllbGQgfCBWYWx1ZSB8CnwtLS0tLS0tfC0tLS0tLS18CnwgKipJRCoqIHwgVEMtT1JELTAwOCB8CnwgKipUeXBlKiogfCBwcm92aWRlci1jb250cmFjdCB8CnwgKipQcmlvcml0eSoqIHwgUDEgfAp8ICoqRmxvdyoqIHwgT3JkZXIgcmV0cmlldmFsIGNvbnRyYWN0IHZhbGlkYXRpb24gfAp8ICoqVHJpZ2dlcioqIHwgYG9yZGVyU3RhdHVzYCBmaWVsZCBhZGRlZCB0byBgT3JkZXJEdG9gOyBkb3duc3RyZWFtIGNvbnN1bWVycyAocGF5bWVudC1zZXJ2aWNlLCBzaGlwcGluZy1zZXJ2aWNlLCBwcm94eS1jbGllbnQpIG11c3QgYmUgYWJsZSB0byBwYXJzZSB0aGUgbmV3IGZpZWxkIHwKfCAqKlByZWNvbmRpdGlvbnMqKiB8IFBhY3QgYnJva2VyIHJ1bm5pbmc7IHByb3ZpZGVyIHN0YXRlICJhbiBvcmRlciB3aXRoIGlkIDEgZXhpc3RzIGFuZCBoYXMgc3RhdHVzIENPTkZJUk1FRCIgY29uZmlndXJlZCB8CnwgKipUZXN0IFN0ZXBzKiogfCAxLiBTZXQgdXAgUGFjdCBwcm92aWRlciB0ZXN0IHdpdGggYEBQcm92aWRlcigib3JkZXItc2VydmljZSIpYCA8YnI+Mi4gRGVmaW5lIHByb3ZpZGVyIHN0YXRlIHJldHVybmluZyBvcmRlciB3aXRoIGBvcmRlclN0YXR1cz0nQ09ORklSTUVEJ2AgPGJyPjMuIFJ1biBgQFBhY3RWZXJpZmljYXRpb25gIGFnYWluc3QgY29uc3VtZXIgcGFjdHMgZnJvbSBwYXltZW50LXNlcnZpY2UsIHNoaXBwaW5nLXNlcnZpY2UsIGFuZCBwcm94eS1jbGllbnQgPGJyPjQuIEFzc2VydCBhbGwgY29uc3VtZXIgcGFjdHMgYXJlIHNhdGlzZmllZCA8YnI+NS4gQXNzZXJ0IHJlc3BvbnNlIHNjaGVtYSBpbmNsdWRlcyBgb3JkZXJTdGF0dXNgIGFzIGEgbm9uLW51bGwgU3RyaW5nIHwKfCAqKkV4cGVjdGVkIFJlc3VsdCoqIHwgQWxsIHJlZ2lzdGVyZWQgY29uc3VtZXIgcGFjdHMgcGFzcyB2ZXJpZmljYXRpb247IGBvcmRlclN0YXR1c2AgcHJlc2VudCBpbiByZXNwb25zZSB8CnwgKipBdXRvbWF0aW9uIE5vdGVzKiogfCBDcmVhdGUgYE9yZGVyU2VydmljZVByb3ZpZGVyUGFjdFRlc3QuamF2YWAgaW4gYHNyYy90ZXN0L2phdmEvY29tL3NlbGltaG9ycmkvYXBwL3BhY3QvYDsgdXNlIGBhdS5jb20uZGl1cy5wYWN0LnByb3ZpZGVyLmp1bml0NS5QYWN0VmVyaWZpY2F0aW9uSW52b2NhdGlvbkNvbnRleHRQcm92aWRlcmA7IGNvbmZpZ3VyZSBQYWN0IGJyb2tlciBVUkwgdmlhIGBAUGFjdEJyb2tlcmAgYW5ub3RhdGlvbiB8CgotLS0KCiMjIyMgVEMtT1JELTAwOTogR0VUIC9hcGkvb3JkZXJzL3N0YXR1cy97c3RhdHVzfSBjb250cmFjdCBleHBvc2VzIG5ldyBlbmRwb2ludAoKfCBGaWVsZCB8IFZhbHVlIHwKfC0tLS0tLS18LS0tLS0tLXwKfCAqKklEKiogfCBUQy1PUkQtMDA5IHwKfCAqKlR5cGUqKiB8IHByb3ZpZGVyLWNvbnRyYWN0IHwKfCAqKlByaW9yaXR5KiogfCBQMSB8CnwgKipGbG93KiogfCBPcmRlciBzdGF0dXMgZW5kcG9pbnQgY29udHJhY3QgfAp8ICoqVHJpZ2dlcioqIHwgTmV3IGVuZHBvaW50IGBHRVQgL2FwaS9vcmRlcnMvc3RhdHVzL3tzdGF0dXN9YCBhZGRlZDsgY29udHJhY3RzIG11c3QgYmUgZXN0YWJsaXNoZWQgZm9yIGZ1dHVyZSBjb25zdW1lciBpbnRlZ3JhdGlvbiB8CnwgKipQcmVjb25kaXRpb25zKiogfCBQYWN0IGJyb2tlciBydW5uaW5nOyBwcm92aWRlciBzdGF0ZSAib3JkZXJzIHdpdGggc3RhdHVzIFBFTkRJTkcgZXhpc3QiIGNvbmZpZ3VyZWQgfAp8ICoqVGVzdCBTdGVwcyoqIHwgMS4gSW4gYE9yZGVyU2VydmljZVByb3ZpZGVyUGFjdFRlc3QuamF2YWAsIGFkZCBwcm92aWRlciBzdGF0ZSBmb3Igc3RhdHVzLWZpbHRlcmVkIG9yZGVycyA8YnI+Mi4gVmVyaWZ5IGBHRVQgL2FwaS9vcmRlcnMvc3RhdHVzL1BFTkRJTkdgIHJldHVybnMgYER0b0NvbGxlY3Rpb25SZXNwb25zZTxPcmRlckR0bz5gIHdpdGggYGNvbGxlY3Rpb25gIGFycmF5IDxicj4zLiBBc3NlcnQgZWFjaCBpdGVtIGluIGBjb2xsZWN0aW9uYCBoYXMgYG9yZGVySWRgLCBgb3JkZXJEYXRlYCwgYG9yZGVyRGVzY2AsIGBvcmRlckZlZWAsIGBvcmRlclN0YXR1c2AgZmllbGRzIDxicj40LiBQdWJsaXNoIHByb3ZpZGVyIHBhY3QgdmVyaWZpY2F0aW9uIHJlc3VsdHMgdG8gYnJva2VyIHwKfCAqKkV4cGVjdGVkIFJlc3VsdCoqIHwgUHJvdmlkZXIgY29udHJhY3QgcHVibGlzaGVkOyBuZXcgZW5kcG9pbnQgc2NoZW1hIGF2YWlsYWJsZSBmb3IgY29uc3VtZXIgYWRvcHRpb24gfAp8ICoqQXV0b21hdGlvbiBOb3RlcyoqIHwgRXh0ZW5kIGBPcmRlclNlcnZpY2VQcm92aWRlclBhY3RUZXN0LmphdmFgOyBhZGQgYEBTdGF0ZSgib3JkZXJzIHdpdGggUEVORElORyBzdGF0dXMgZXhpc3QiKWAgbWV0aG9kIHNlZWRpbmcgdGVzdCBkYXRhIHwKCi0tLQoKIyMjIHBheW1lbnQtc2VydmljZQoKIyMjIyBUQy1QQVktMDAxOiBQYXltZW50U2VydmljZUltcGwuZ2V0T3JkZXIoKSBkZXNlcmlhbGl6ZXMgb3JkZXJTdGF0dXMgZmllbGQgZnJvbSBvcmRlci1zZXJ2aWNlIHJlc3BvbnNlCgp8IEZpZWxkIHwgVmFsdWUgfAp8LS0tLS0tLXwtLS0tLS0tfAp8ICoqSUQqKiB8IFRDLVBBWS0wMDEgfAp8ICoqVHlwZSoqIHwgY29uc3VtZXItY29udHJhY3QgfAp8ICoqUHJpb3JpdHkqKiB8IFAxIHwKfCAqKkZsb3cqKiB8IFBheW1lbnQgY3JlYXRpb24g4oCUIGZldGNoIG9yZGVyIGRldGFpbHMgfAp8ICoqVHJpZ2dlcioqIHwgYG9yZGVyU3RhdHVzYCBmaWVsZCBhZGRlZCB0byBgT3JkZXJEdG9gIHJldHVybmVkIGJ5IG9yZGVyLXNlcnZpY2U7IGNvbnN1bWVyIG11c3Qgbm90IGJyZWFrIG9uIG5ldyBmaWVsZCB8CnwgKipQcmVjb25kaXRpb25zKiogfCBQYWN0IGNvbnN1bWVyIHRlc3QgZm9yIHBheW1lbnQtc2VydmljZTsgbW9jayBvcmRlci1zZXJ2aWNlIHJ1bm5pbmcgfAp8ICoqVGVzdCBTdGVwcyoqIHwgMS4gRGVmaW5lIFBhY3QgY29uc3VtZXIgaW50ZXJhY3Rpb246IGBHRVQgL29yZGVyLXNlcnZpY2UvYXBpL29yZGVycy8xYCByZXR1cm5zIGJvZHkgd2l0aCBgb3JkZXJJZGAsIGBvcmRlckRhdGVgLCBgb3JkZXJEZXNjYCwgYG9yZGVyRmVlYCwgYG9yZGVyU3RhdHVzPSdDT05GSVJNRUQnYCwgYGNhcnRgIDxicj4yLiBSdW4gYFBheW1lbnRTZXJ2aWNlSW1wbC5nZXRPcmRlcigxKWAgYWdhaW5zdCBQYWN0IG1vY2sgc2VydmVyIDxicj4zLiBBc3NlcnQgcmV0dXJuZWQgYE9yZGVyRHRvYCBoYXMgYG9yZGVyU3RhdHVzID09ICJDT05GSVJNRUQiYCA8YnI+NC4gQXNzZXJ0IGFsbCBvdGhlciBmaWVsZHMgKGBvcmRlcklkYCwgYG9yZGVyRGF0ZWAsIGBvcmRlckZlZWApIGFyZSBjb3JyZWN0bHkgbWFwcGVkIDxicj41LiBQdWJsaXNoIGNvbnN1bWVyIHBhY3QgdG8gYnJva2VyIHwKfCAqKkV4cGVjdGVkIFJlc3VsdCoqIHwgYFBheW1lbnRTZXJ2aWNlSW1wbGAgY29ycmVjdGx5IGRlc2VyaWFsaXplcyBgT3JkZXJEdG9gIGluY2x1ZGluZyBuZXcgYG9yZGVyU3RhdHVzYCBmaWVsZCB8CnwgKipBdXRvbWF0aW9uIE5vdGVzKiogfCBDcmVhdGUgYFBheW1lbnRTZXJ2aWNlT3JkZXJDb25zdW1lclBhY3RUZXN0LmphdmFgIGluIGBzcmMvdGVzdC9qYXZhL2NvbS9zZWxpbWhvcnJpL2FwcC9wYWN0L2A7IHVzZSBgQFBhY3RDb25zdW1lclRlc3RgIHdpdGggYEBQYWN0KGNvbnN1bWVyPSJwYXltZW50LXNlcnZpY2UiLCBwcm92aWRlcj0ib3JkZXItc2VydmljZSIpYDsgY29uZmlndXJlIGBhdS5jb20uZGl1cy5wYWN0OnBhY3QtanZtLWNvbnN1bWVyLWp1bml0NWAgZGVwZW5kZW5jeSB8CgotLS0KCiMjIyMgVEMtUEFZLTAwMjogUGF5bWVudFNlcnZpY2VJbXBsLmdldE9yZGVyKCkgc3RpbGwgZnVuY3Rpb25zIHdoZW4gb3JkZXJTdGF0dXMgaXMgbnVsbAoKfCBGaWVsZCB8IFZhbHVlIHwKfC0tLS0tLS18LS0tLS0tLXwKfCAqKklEKiogfCBUQy1QQVktMDAyIHwKfCAqKlR5cGUqKiB8IGNvbnN1bWVyLWNvbnRyYWN0IHwKfCAqKlByaW9yaXR5KiogfCBQMSB8CnwgKipGbG93KiogfCBQYXltZW50IGNyZWF0aW9uIOKAlCBiYWNrd2FyZCBjb21wYXRpYmlsaXR5IHwKfCAqKlRyaWdnZXIqKiB8IGBvcmRlclN0YXR1c2AgaGFzIGBASnNvbkluY2x1ZGUoTk9OX05VTEwpYDsgb2xkZXIgb3JkZXIgcmVjb3JkcyB3aWxsIG5vdCBoYXZlIHRoaXMgZmllbGQgaW4gdGhlIHJlc3BvbnNlIHwKfCAqKlByZWNvbmRpdGlvbnMqKiB8IFBhY3QgY29uc3VtZXIgdGVzdDsgbW9jayBvcmRlci1zZXJ2aWNlIHJldHVybmluZyBPcmRlckR0byB3aXRob3V0IGBvcmRlclN0YXR1c2Aga2V5IHwKfCAqKlRlc3QgU3RlcHMqKiB8IDEuIERlZmluZSBQYWN0IGludGVyYWN0aW9uOiBgR0VUIC9vcmRlci1zZXJ2aWNlL2FwaS9vcmRlcnMvMmAgcmV0dXJucyBib2R5IFdJVEhPVVQgYG9yZGVyU3RhdHVzYCBrZXkgPGJyPjIuIFJ1biBgUGF5bWVudFNlcnZpY2VJbXBsLmdldE9yZGVyKDIpYCBhZ2FpbnN0IG1vY2sgc2VydmVyIDxicj4zLiBBc3NlcnQgbm8gYEpzb25NYXBwaW5nRXhjZXB0aW9uYCBvciBgTnVsbFBvaW50ZXJFeGNlcHRpb25gIHRocm93biA8YnI+NC4gQXNzZXJ0IHJldHVybmVkIGBPcmRlckR0by5nZXRPcmRlclN0YXR1cygpYCBpcyBgbnVsbGAgPGJyPjUuIEFzc2VydCBwYXltZW50IHByb2Nlc3NpbmcgbG9naWMgY29tcGxldGVzIG5vcm1hbGx5IHwKfCAqKkV4cGVjdGVkIFJlc3VsdCoqIHwgQWJzZW50IGBvcmRlclN0YXR1c2AgZmllbGQgaGFuZGxlZCBncmFjZWZ1bGx5OyBubyBleGNlcHRpb24gdGhyb3duIHwKfCAqKkF1dG9tYXRpb24gTm90ZXMqKiB8IEV4dGVuZCBgUGF5bWVudFNlcnZpY2VPcmRlckNvbnN1bWVyUGFjdFRlc3QuamF2YWA7IGFkZCBzZWNvbmQgYEBQYWN0YCBtZXRob2QgZm9yIHRoZSBudWxsL2Fic2VudCBzY2VuYXJpbyB8CgotLS0KCiMjIyBzaGlwcGluZy1zZXJ2aWNlCgojIyMjIFRDLVNIUC0wMDE6IE9yZGVySXRlbVNlcnZpY2VJbXBsLmdldE9yZGVyKCkgZGVzZXJpYWxpemVzIG9yZGVyU3RhdHVzIGZpZWxkIGZyb20gb3JkZXItc2VydmljZSByZXNwb25zZQoKfCBGaWVsZCB8IFZhbHVlIHwKfC0tLS0tLS18LS0tLS0tLXwKfCAqKklEKiogfCBUQy1TSFAtMDAxIHwKfCAqKlR5cGUqKiB8IGNvbnN1bWVyLWNvbnRyYWN0IHwKfCAqKlByaW9yaXR5KiogfCBQMSB8CnwgKipGbG93KiogfCBTaGlwcGluZyBvcmRlci1pdGVtIGxvb2t1cCDigJQgZmV0Y2ggcGFyZW50IG9yZGVyIHwKfCAqKlRyaWdnZXIqKiB8IGBvcmRlclN0YXR1c2AgZmllbGQgYWRkZWQgdG8gYE9yZGVyRHRvYCByZXR1cm5lZCBieSBvcmRlci1zZXJ2aWNlOyBjb25zdW1lciBtdXN0IG5vdCBicmVhayBvbiBuZXcgZmllbGQgfAp8ICoqUHJlY29uZGl0aW9ucyoqIHwgUGFjdCBjb25zdW1lciB0ZXN0IGZvciBzaGlwcGluZy1zZXJ2aWNlOyBtb2NrIG9yZGVyLXNlcnZpY2UgcnVubmluZyB8CnwgKipUZXN0IFN0ZXBzKiogfCAxLiBEZWZpbmUgUGFjdCBpbnRlcmFjdGlvbjogYEdFVCAvb3JkZXItc2VydmljZS9hcGkvb3JkZXJzLzFgIHJldHVybnMgYE9yZGVyRHRvYCB3aXRoIGBvcmRlclN0YXR1cz0nU0hJUFBFRCdgIDxicj4yLiBSdW4gYE9yZGVySXRlbVNlcnZpY2VJbXBsLmdldE9yZGVyKDEpYCBhZ2FpbnN0IFBhY3QgbW9jayBzZXJ2ZXIgPGJyPjMuIEFzc2VydCByZXR1cm5lZCBgT3JkZXJEdG8uZ2V0T3JkZXJTdGF0dXMoKWAgZXF1YWxzIGAiU0hJUFBFRCJgIDxicj40LiBBc3NlcnQgYWxsIG90aGVyIGZpZWxkcyBhcmUgY29ycmVjdGx5IG1hcHBlZCA8YnI+NS4gQXNzZXJ0IG9yZGVyLWl0ZW0gcHJvY2Vzc2luZyBjb21wbGV0ZXMgd2l0aG91dCBlcnJvciA8YnI+Ni4gUHVibGlzaCBjb25zdW1lciBwYWN0IHRvIGJyb2tlciB8CnwgKipFeHBlY3RlZCBSZXN1bHQqKiB8IGBPcmRlckl0ZW1TZXJ2aWNlSW1wbGAgY29ycmVjdGx5IGhhbmRsZXMgbmV3IGBvcmRlclN0YXR1c2AgZmllbGQgaW4gb3JkZXIgcmVzcG9uc2UgfAp8ICoqQXV0b21hdGlvbiBOb3RlcyoqIHwgQ3JlYXRlIGBTaGlwcGluZ1NlcnZpY2VPcmRlckNvbnN1bWVyUGFjdFRlc3QuamF2YWAgaW4gYHNyYy90ZXN0L2phdmEvY29tL3NlbGltaG9ycmkvYXBwL3BhY3QvYDsgdXNlIGBAUGFjdENvbnN1bWVyVGVzdGAgd2l0aCBgQFBhY3QoY29uc3VtZXI9InNoaXBwaW5nLXNlcnZpY2UiLCBwcm92aWRlcj0ib3JkZXItc2VydmljZSIpYCB8CgotLS0KCiMjIyMgVEMtU0hQLTAwMjogT3JkZXJJdGVtU2VydmljZUltcGwuZ2V0T3JkZXIoKSBoYW5kbGVzIGFic2VudCBvcmRlclN0YXR1cyBncmFjZWZ1bGx5Cgp8IEZpZWxkIHwgVmFsdWUgfAp8LS0tLS0tLXwtLS0tLS0tfAp8ICoqSUQqKiB8IFRDLVNIUC0wMDIgfAp8ICoqVHlwZSoqIHwgY29uc3VtZXItY29udHJhY3QgfAp8ICoqUHJpb3JpdHkqKiB8IFAxIHwKfCAqKkZsb3cqKiB8IFNoaXBwaW5nIG9yZGVyLWl0ZW0gbG9va3VwIOKAlCBiYWNrd2FyZCBjb21wYXRpYmlsaXR5IHwKfCAqKlRyaWdnZXIqKiB8IGBvcmRlclN0YXR1c2AgaXMgYEBKc29uSW5jbHVkZShOT05fTlVMTClgOyBhYnNlbmNlIG11c3QgYmUgdG9sZXJhdGVkIGJ5IGNvbnN1bWVyIHwKfCAqKlByZWNvbmRpdGlvbnMqKiB8IFBhY3QgY29uc3VtZXIgdGVzdDsgbW9jayBvcmRlci1zZXJ2aWNlIHJldHVybmluZyBgT3JkZXJEdG9gIHdpdGhvdXQgYG9yZGVyU3RhdHVzYCBrZXkgfAp8ICoqVGVzdCBTdGVwcyoqIHwgMS4gRGVmaW5lIFBhY3QgaW50ZXJhY3Rpb246IGBHRVQgL29yZGVyLXNlcnZpY2UvYXBpL29yZGVycy8yYCByZXR1cm5zIGJvZHkgd2l0aG91dCBgb3JkZXJTdGF0dXNgIDxicj4yLiBSdW4gYE9yZGVySXRlbVNlcnZpY2VJbXBsLmdldE9yZGVyKDIpYCBhZ2FpbnN0IG1vY2sgc2VydmVyIDxicj4zLiBBc3NlcnQgbm8gZXhjZXB0aW9uIHRocm93biA8YnI+NC4gQXNzZXJ0IGBvcmRlckR0by5nZXRPcmRlclN0YXR1cygpYCBpcyBgbnVsbGAgPGJyPjUuIEFzc2VydCBvcmRlci1pdGVtIGNhbiBzdGlsbCBiZSBjcmVhdGVkL3JldHJpZXZlZCBub3JtYWxseSB8CnwgKipFeHBlY3RlZCBSZXN1bHQqKiB8IEFic2VudCBgb3JkZXJTdGF0dXNgIGNhdXNlcyBubyBmYWlsdXJlIGluIHNoaXBwaW5nLXNlcnZpY2UgcHJvY2Vzc2luZyB8CnwgKipBdXRvbWF0aW9uIE5vdGVzKiogfCBFeHRlbmQgYFNoaXBwaW5nU2VydmljZU9yZGVyQ29uc3VtZXJQYWN0VGVzdC5qYXZhYDsgYWRkIHNlY29uZCBgQFBhY3RgIG1ldGhvZCBmb3IgdGhlIG51bGwvYWJzZW50IHNjZW5hcmlvIHwKCi0tLQoKIyMjIHByb3h5LWNsaWVudAoKIyMjIyBUQy1QUlgtMDAxOiBPcmRlckNsaWVudFNlcnZpY2UgRmVpZ25DbGllbnQgZGVzZXJpYWxpemVzIG9yZGVyU3RhdHVzIGZyb20gb3JkZXItc2VydmljZSBHRVQgL2FwaS9vcmRlcnMve29yZGVySWR9Cgp8IEZpZWxkIHwgVmFsdWUgfAp8LS0tLS0tLXwtLS0tLS0tfAp8ICoqSUQqKiB8IFRDLVBSWC0wMDEgfAp8ICoqVHlwZSoqIHwgY29uc3VtZXItY29udHJhY3QgfAp8ICoqUHJpb3JpdHkqKiB8IFAxIHwKfCAqKkZsb3cqKiB8IFByb3h5IG9yZGVyIHJldHJpZXZhbCDigJQgcGFzc3Rocm91Z2ggd2l0aCBuZXcgZmllbGQgfAp8ICoqVHJpZ2dlcioqIHwgYG9yZGVyU3RhdHVzYCBmaWVsZCBhZGRlZCB0byBgT3JkZXJEdG9gOyBGZWlnbkNsaWVudCBgT3JkZXJDbGllbnRTZXJ2aWNlYCBtdXN0IGZvcndhcmQgbmV3IGZpZWxkIHRvIHByb3h5IGNhbGxlcnMgfAp8ICoqUHJlY29uZGl0aW9ucyoqIHwgUGFjdCBjb25zdW1lciB0ZXN0IGZvciBwcm94eS1jbGllbnQ7IG1vY2sgb3JkZXItc2VydmljZSBydW5uaW5nOyBwcm94eS1jbGllbnQgYE9yZGVyRHRvYCBtb2RlbCB1cGRhdGVkIHRvIGluY2x1ZGUgYG9yZGVyU3RhdHVzYCB8CnwgKipUZXN0IFN0ZXBzKiogfCAxLiBWZXJpZnkgcHJveHktY2xpZW50J3MgYE9yZGVyRHRvYCAob3Igc2hhcmVkIERUTykgaW5jbHVkZXMgYG9yZGVyU3RhdHVzYCBmaWVsZCA8YnI+Mi4gRGVmaW5lIFBhY3QgaW50ZXJhY3Rpb246IGBHRVQgL29yZGVyLXNlcnZpY2UvYXBpL29yZGVycy8xYCByZXR1cm5zIGBPcmRlckR0b2Agd2l0aCBgb3JkZXJTdGF0dXM9J1BFTkRJTkcnYCA8YnI+My4gQ2FsbCBgT3JkZXJDbGllbnRTZXJ2aWNlLmZpbmRCeUlkKCIxIilgIGFnYWluc3QgUGFjdCBtb2NrIHNlcnZlciA8YnI+NC4gQXNzZXJ0IHJldHVybmVkIERUTyBjb250YWlucyBgb3JkZXJTdGF0dXMgPT0gIlBFTkRJTkciYCA8YnI+NS4gQ2FsbCBwcm94eSBgR0VUIC9hcHAvYXBpL29yZGVycy8xYCB2aWEgYFRlc3RSZXN0VGVtcGxhdGVgOyBhc3NlcnQgYG9yZGVyU3RhdHVzYCBpcyBwcmVzZW50IGluIHJlc3BvbnNlIDxicj42LiBQdWJsaXNoIGNvbnN1bWVyIHBhY3QgdG8gYnJva2VyIHwKfCAqKkV4cGVjdGVkIFJlc3VsdCoqIHwgRmVpZ25DbGllbnQgY29ycmVjdGx5IGZvcndhcmRzIGBvcmRlclN0YXR1c2AgdGhyb3VnaCB0byBwcm94eSBBUEkgY2FsbGVycyB8CnwgKipBdXRvbWF0aW9uIE5vdGVzKiogfCBDcmVhdGUgYFByb3h5Q2xpZW50T3JkZXJDb25zdW1lclBhY3RUZXN0LmphdmFgIGluIGBzcmMvdGVzdC9qYXZhL2NvbS9zZWxpbWhvcnJpL2FwcC9wYWN0L2A7IHVzZSBgQFBhY3RDb25zdW1lclRlc3RgIHdpdGggYEBQYWN0KGNvbnN1bWVyPSJwcm94eS1jbGllbnQiLCBwcm92aWRlcj0ib3JkZXItc2VydmljZSIpYDsgYWxzbyB1cGRhdGUgYE9yZGVyRHRvYCBpbiBwcm94eS1jbGllbnQgaWYgaXQgaXMgYSBsb2NhbCBjb3B5IHwKCi0tLQoKIyMjIyBUQy1QUlgtMDAyOiBPcmRlckNsaWVudFNlcnZpY2UgRmVpZ25DbGllbnQgZXhwb3NlcyBuZXcgR0VUIC9hcGkvb3JkZXJzL3N0YXR1cy97c3RhdHVzfSBlbmRwb2ludAoKfCBGaWVsZCB8IFZhbHVlIHwKfC0tLS0tLS18LS0tLS0tLXwKfCAqKklEKiogfCBUQy1QUlgtMDAyIHwKfCAqKlR5cGUqKiB8IGNvbnN1bWVyLWNvbnRyYWN0IHwKfCAqKlByaW9yaXR5KiogfCBQMSB8CnwgKipGbG93KiogfCBQcm94eSBvcmRlciBzdGF0dXMgZmlsdGVyaW5nIHwKfCAqKlRyaWdnZXIqKiB8IE5ldyBgR0VUIC9hcGkvb3JkZXJzL3N0YXR1cy97c3RhdHVzfWAgZW5kcG9pbnQgYWRkZWQgaW4gb3JkZXItc2VydmljZSBidXQgbm90IHlldCBtYXBwZWQgaW4gcHJveHktY2xpZW50IGBPcmRlckNsaWVudFNlcnZpY2VgIEZlaWduQ2xpZW50IHwKfCAqKlByZWNvbmRpdGlvbnMqKiB8IGBPcmRlckNsaWVudFNlcnZpY2VgIHVwZGF0ZWQgdG8gYWRkIGBmaW5kQnlTdGF0dXMoU3RyaW5nIHN0YXR1cylgIG1ldGhvZDsgYE9yZGVyQ29udHJvbGxlcmAgaW4gcHJveHktY2xpZW50IHVwZGF0ZWQgdG8gZXhwb3NlIGBHRVQgL2FwcC9hcGkvb3JkZXJzL3N0YXR1cy97c3RhdHVzfWAgfAp8ICoqVGVzdCBTdGVwcyoqIHwgMS4gQWRkIGBAR2V0TWFwcGluZygiL3N0YXR1cy97c3RhdHVzfSIpIER0b0NvbGxlY3Rpb25SZXNwb25zZTxPcmRlckR0bz4gZmluZEJ5U3RhdHVzKEBQYXRoVmFyaWFibGUgU3RyaW5nIHN0YXR1cylgIHRvIGBPcmRlckNsaWVudFNlcnZpY2VgIEZlaWduQ2xpZW50IDxicj4yLiBBZGQgY29ycmVzcG9uZGluZyBtZXRob2QgaW4gYE9yZGVyQ29udHJvbGxlcmAgPGJyPjMuIERlZmluZSBQYWN0IGludGVyYWN0aW9uOiBgR0VUIC9vcmRlci1zZXJ2aWNlL2FwaS9vcmRlcnMvc3RhdHVzL1BFTkRJTkdgIHJldHVybnMgYER0b0NvbGxlY3Rpb25SZXNwb25zZTxPcmRlckR0bz5gIHdpdGggMiBQRU5ESU5HIG9yZGVycyA8YnI+NC4gQ2FsbCBgT3JkZXJDbGllbnRTZXJ2aWNlLmZpbmRCeVN0YXR1cygiUEVORElORyIpYCBhZ2FpbnN0IFBhY3QgbW9jayBzZXJ2ZXIgPGJyPjUuIEFzc2VydCAyIG9yZGVycyByZXR1cm5lZCwgZWFjaCB3aXRoIGBvcmRlclN0YXR1cz0nUEVORElORydgIDxicj42LiBDYWxsIHByb3h5IGBHRVQgL2FwcC9hcGkvb3JkZXJzL3N0YXR1cy9QRU5ESU5HYCBlbmQtdG8tZW5kOyBhc3NlcnQgY29ycmVjdCByZXN1bHRzIDxicj43LiBQdWJsaXNoIGNvbnN1bWVyIHBhY3QgfAp8ICoqRXhwZWN0ZWQgUmVzdWx0KiogfCBQcm94eSBjb3JyZWN0bHkgcm91dGVzIG5ldyBzdGF0dXMgZmlsdGVyIGVuZHBvaW50OyBGZWlnbkNsaWVudCBtZXRob2QgYWRkZWQgYW5kIGZ1bmN0aW9uYWwgfAp8ICoqQXV0b21hdGlvbiBOb3RlcyoqIHwgRXh0ZW5kIGBQcm94eUNsaWVudE9yZGVyQ29uc3VtZXJQYWN0VGVzdC5qYXZhYDsgYWxzbyBhZGQgaW50ZWdyYXRpb24gdGVzdCBpbiBgT3JkZXJDb250cm9sbGVySW50ZWdyYXRpb25UZXN0LmphdmFgIGZvciB0aGUgbmV3IHByb3h5IGVuZHBvaW50OyB1cGRhdGUgYHByb3h5LWNsaWVudC9zZXJ2aWNlLWdyYXBoLm1kYCB3aXRoIG5ldyBlbmRwb2ludCB8CgotLS0KCiMjIFRlc3QgRXhlY3V0aW9uIE9yZGVyCgpSZWNvbW1lbmRlZCBzZXF1ZW5jZSB0byBzdXJmYWNlIGZhaWx1cmVzIGVhcmx5OgoKMS4gKipQMSBVbml0IHRlc3RzIGZpcnN0KiogKGZhc3QsIG5vIGluZnJhc3RydWN0dXJlKQogICAtIFRDLU9SRC0wMDEsIFRDLU9SRC0wMDIsIFRDLU9SRC0wMDMKMi4gKipQMiBVbml0IHRlc3RzKioKICAgLSBUQy1PUkQtMDA0CjMuICoqSW50ZWdyYXRpb24gdGVzdHMqKiAocnVuIGluIHBhcmFsbGVsIHdpdGggcHJvdmlkZXItY29udHJhY3Qgc2V0dXApCiAgIC0gVEMtT1JELTAwNSwgVEMtT1JELTAwNgo0LiAqKlAyIEludGVncmF0aW9uIHRlc3RzKioKICAgLSBUQy1PUkQtMDA3CjUuICoqUHJvdmlkZXItY29udHJhY3QgdGVzdHMqKiAob3JkZXItc2VydmljZSBtdXN0IGJlIGhlYWx0aHkgYmVmb3JlIGNvbnN1bWVyIHRlc3RzIHJ1bikKICAgLSBUQy1PUkQtMDA4LCBUQy1PUkQtMDA5CjYuICoqQ29uc3VtZXItY29udHJhY3QgdGVzdHMqKiAocnVuIGFmdGVyIHByb3ZpZGVyIHBhY3RzIGFyZSBwdWJsaXNoZWQpCiAgIC0gVEMtUEFZLTAwMSwgVEMtUEFZLTAwMiAocGF5bWVudC1zZXJ2aWNlKQogICAtIFRDLVNIUC0wMDEsIFRDLVNIUC0wMDIgKHNoaXBwaW5nLXNlcnZpY2UpCiAgIC0gVEMtUFJYLTAwMSwgVEMtUFJYLTAwMiAocHJveHktY2xpZW50KQoKLS0tCgojIyBBdXRvbWF0aW9uIEZyYW1ld29yayBOb3RlcwoKIyMjIFVuaXQgJiBJbnRlZ3JhdGlvbiBUZXN0cwotICoqRnJhbWV3b3JrOioqIEpVbml0IDUgKGBqdW5pdC1qdXBpdGVyYCkgKyBNb2NraXRvIChgbW9ja2l0by1jb3JlYCkgKyBTcHJpbmcgQm9vdCBUZXN0IChgQFNwcmluZ0Jvb3RUZXN0YCkKLSAqKlRlc3QgY29udGFpbmVyczoqKiBVc2UgYG9yZy50ZXN0Y29udGFpbmVyczpteXNxbGAgZm9yIERCLWRlcGVuZGVudCBpbnRlZ3JhdGlvbiB0ZXN0czsgY29uZmlndXJlIHZpYSBgQFRlc3Rjb250YWluZXJzYCArIGBAQ29udGFpbmVyYAotICoqTW9ja012YzoqKiBVc2UgYEBBdXRvQ29uZmlndXJlTW9ja012Y2Agd2l0aCBgTW9ja012Yy5wZXJmb3JtKC4uLilgIGZvciBjb250cm9sbGVyLWxheWVyIGludGVncmF0aW9uIHRlc3RzCgojIyMgQ29udHJhY3QgVGVzdHMKLSAqKkZyYW1ld29yazoqKiBQYWN0IEpWTSAoYGF1LmNvbS5kaXVzLnBhY3Q6cGFjdC1qdm0tcHJvdmlkZXItanVuaXQ1YCBmb3IgcHJvdmlkZXIsIGBhdS5jb20uZGl1cy5wYWN0OnBhY3QtanZtLWNvbnN1bWVyLWp1bml0NWAgZm9yIGNvbnN1bWVyKQotICoqUGFjdCBicm9rZXI6KiogQ29uZmlndXJlIHZpYSBgcGFjdC5icm9rZXIudXJsYCBpbiB0ZXN0IHByb3BlcnRpZXM7IHVzZSBgQFBhY3RCcm9rZXJgIGFubm90YXRpb24KLSAqKlByb3ZpZGVyIGFubm90YXRpb246KiogYEBQcm92aWRlcigib3JkZXItc2VydmljZSIpYCBvbiBwcm92aWRlciB0ZXN0IGNsYXNzCi0gKipDb25zdW1lciBhbm5vdGF0aW9uOioqIGBAQ29uc3VtZXIoInBheW1lbnQtc2VydmljZSIpYCAvIGBAQ29uc3VtZXIoInNoaXBwaW5nLXNlcnZpY2UiKWAgLyBgQENvbnN1bWVyKCJwcm94eS1jbGllbnQiKWAKCiMjIyBTdWdnZXN0ZWQgTmV3IFRlc3QgRmlsZXMKCnwgVGVzdCBGaWxlIHwgU2VydmljZSB8IExvY2F0aW9uIHwKfC0tLS0tLS0tLS0tfC0tLS0tLS0tLXwtLS0tLS0tLS0tfAp8IGBPcmRlckR0b1Rlc3QuamF2YWAgfCBvcmRlci1zZXJ2aWNlIHwgYHNyYy90ZXN0L2phdmEvY29tL3NlbGltaG9ycmkvYXBwL2R0by9gIHwKfCBgT3JkZXJSZXNvdXJjZVRlc3QuamF2YWAgfCBvcmRlci1zZXJ2aWNlIHwgYHNyYy90ZXN0L2phdmEvY29tL3NlbGltaG9ycmkvYXBwL3Jlc291cmNlL2AgfAp8IGBPcmRlclJlc291cmNlSW50ZWdyYXRpb25UZXN0LmphdmFgIHwgb3JkZXItc2VydmljZSB8IGBzcmMvdGVzdC9qYXZhL2NvbS9zZWxpbWhvcnJpL2FwcC9yZXNvdXJjZS9gIHwKfCBgT3JkZXJTZXJ2aWNlUHJvdmlkZXJQYWN0VGVzdC5qYXZhYCB8IG9yZGVyLXNlcnZpY2UgfCBgc3JjL3Rlc3QvamF2YS9jb20vc2VsaW1ob3JyaS9hcHAvcGFjdC9gIHwKfCBgUGF5bWVudFNlcnZpY2VPcmRlckNvbnN1bWVyUGFjdFRlc3QuamF2YWAgfCBwYXltZW50LXNlcnZpY2UgfCBgc3JjL3Rlc3QvamF2YS9jb20vc2VsaW1ob3JyaS9hcHAvcGFjdC9gIHwKfCBgU2hpcHBpbmdTZXJ2aWNlT3JkZXJDb25zdW1lclBhY3RUZXN0LmphdmFgIHwgc2hpcHBpbmctc2VydmljZSB8IGBzcmMvdGVzdC9qYXZhL2NvbS9zZWxpbWhvcnJpL2FwcC9wYWN0L2AgfAp8IGBQcm94eUNsaWVudE9yZGVyQ29uc3VtZXJQYWN0VGVzdC5qYXZhYCB8IHByb3h5LWNsaWVudCB8IGBzcmMvdGVzdC9qYXZhL2NvbS9zZWxpbWhvcnJpL2FwcC9wYWN0L2AgfAo=
+# Automation Test Plan
+**PR:** #3 | **Branch:** test/service-discovery-agent-demo | **Repo:** ecommerce-microservice-backend-app
+**Source PR URL:** https://github.com/abhisheksingh-0710/ecommerce-microservice-backend-app/pull/3
+**Generated:** 2026-05-14T00:00:00Z
+**Total Test Cases:** 14
+
+---
+
+## Test Plan Summary
+
+| Service | Role | Test Types | Test Case Count | Priority |
+|---------|------|------------|-----------------|----------|
+| order-service | Directly Changed | unit, integration, provider-contract | 8 | P1 |
+| payment-service | Downstream Dependent | consumer-contract | 2 | P1 |
+| shipping-service | Downstream Dependent | consumer-contract | 2 | P1 |
+| proxy-client | Downstream Dependent | consumer-contract | 2 | P1-P2 |
+
+---
+
+## Test Cases by Service
+
+---
+
+### order-service
+
+#### TC-ORD-001: OrderDto includes orderStatus field with NON_NULL serialization
+
+| Field | Value |
+|-------|-------|
+| **ID** | TC-ORD-001 |
+| **Type** | unit |
+| **Priority** | P1 |
+| **Flow** | Order DTO construction and serialization |
+| **Trigger** | `orderStatus` field added to `OrderDto` with `@JsonInclude(NON_NULL)` |
+| **Preconditions** | Jackson ObjectMapper configured as per order-service application context |
+| **Test Steps** | 1. Build `OrderDto` with `orderStatus = "PENDING"` using builder<br>2. Serialize to JSON using ObjectMapper<br>3. Assert JSON string contains `"orderStatus":"PENDING"`<br>4. Build `OrderDto` without setting `orderStatus` (null)<br>5. Serialize to JSON<br>6. Assert JSON string does NOT contain `"orderStatus"` key |
+| **Expected Result** | Field present when non-null; field absent when null (NON_NULL behaviour) |
+| **Automation Notes** | Add to `OrderDtoSerializationTest.java` in `order-service/src/test/`; use `@JsonTest` slice or plain `ObjectMapper` unit test |
+
+---
+
+#### TC-ORD-002: OrderDto builder sets and gets orderStatus correctly
+
+| Field | Value |
+|-------|-------|
+| **ID** | TC-ORD-002 |
+| **Type** | unit |
+| **Priority** | P1 |
+| **Flow** | Order DTO builder pattern validation |
+| **Trigger** | `orderStatus` field added to `OrderDto` |
+| **Preconditions** | None |
+| **Test Steps** | 1. `OrderDto dto = OrderDto.builder().orderStatus("CONFIRMED").build();`<br>2. Assert `dto.getOrderStatus().equals("CONFIRMED")`<br>3. `OrderDto dto2 = OrderDto.builder().build();`<br>4. Assert `dto2.getOrderStatus()` is null (no NPE) |
+| **Expected Result** | Builder sets and gets `orderStatus`; null default does not throw |
+| **Automation Notes** | Add to `OrderDtoTest.java` in `order-service/src/test/java/com/selimhorri/app/dto/`; plain JUnit 5 test, no Spring context needed |
+
+---
+
+#### TC-ORD-003: OrderResource.findByStatus filters orders by status (unit)
+
+| Field | Value |
+|-------|-------|
+| **ID** | TC-ORD-003 |
+| **Type** | unit |
+| **Priority** | P1 |
+| **Flow** | Order status filtering in controller layer |
+| **Trigger** | `GET /api/orders/status/{status}` endpoint added to `OrderResource` |
+| **Preconditions** | `OrderService` mock available |
+| **Test Steps** | 1. Mock `orderService.findAll()` to return [OrderDto(status=SHIPPED), OrderDto(status=PENDING), OrderDto(status=SHIPPED)]<br>2. Call `orderResource.findByStatus("SHIPPED")`<br>3. Assert HTTP 200<br>4. Assert response body collection contains exactly 2 items<br>5. Assert all items have `orderStatus = "SHIPPED"`<br>6. Call `orderResource.findByStatus("shipped")` (lowercase)<br>7. Assert same 2 items returned (case-insensitive match) |
+| **Expected Result** | Only orders matching the status (case-insensitive) are returned |
+| **Automation Notes** | Add to `OrderResourceTest.java`; use `@WebMvcTest(OrderResource.class)` with `@MockBean OrderService`; use `MockMvc.perform(get("/api/orders/status/SHIPPED"))` |
+
+---
+
+#### TC-ORD-004: GET /api/orders/status/{status} returns 200 with matching orders (integration)
+
+| Field | Value |
+|-------|-------|
+| **ID** | TC-ORD-004 |
+| **Type** | integration |
+| **Priority** | P1 |
+| **Flow** | Order retrieval by status — full request/response cycle |
+| **Trigger** | `GET /api/orders/status/{status}` endpoint added |
+| **Preconditions** | order-service running with H2 in-memory DB; DB seeded with 3 orders: 2 PENDING, 1 SHIPPED |
+| **Test Steps** | 1. `GET /api/orders/status/PENDING`<br>2. Assert HTTP 200<br>3. Assert response `Content-Type: application/json`<br>4. Assert response body is a `DtoCollectionResponse` with 2 items<br>5. Assert each item has `orderStatus = "PENDING"` |
+| **Expected Result** | Exactly 2 orders returned, both with `orderStatus=PENDING` |
+| **Automation Notes** | Add to `OrderResourceIntegrationTest.java`; use `@SpringBootTest(webEnvironment=RANDOM_PORT)` + `TestRestTemplate`; seed data via `@BeforeEach` with `OrderRepository.saveAll()`; use TestContainers for MySQL if running against MySQL profile |
+
+---
+
+#### TC-ORD-005: GET /api/orders/status/{status} is case-insensitive (integration)
+
+| Field | Value |
+|-------|-------|
+| **ID** | TC-ORD-005 |
+| **Type** | integration |
+| **Priority** | P2 |
+| **Flow** | Order status filtering — case insensitivity |
+| **Trigger** | Implementation uses `equalsIgnoreCase` |
+| **Preconditions** | DB seeded with an order with `orderStatus='pending'` (lowercase) |
+| **Test Steps** | 1. `GET /api/orders/status/PENDING`<br>2. Assert HTTP 200<br>3. Assert response contains the order with `orderStatus='pending'` |
+| **Expected Result** | Status match is case-insensitive |
+| **Automation Notes** | Extend `OrderResourceIntegrationTest.java`; add a test method `testFindByStatusCaseInsensitive()` |
+
+---
+
+#### TC-ORD-006: GET /api/orders/{orderId} response includes orderStatus field (integration)
+
+| Field | Value |
+|-------|-------|
+| **ID** | TC-ORD-006 |
+| **Type** | integration |
+| **Priority** | P1 |
+| **Flow** | Order retrieval by ID — response schema verification |
+| **Trigger** | `orderStatus` added to `OrderDto` |
+| **Preconditions** | DB seeded with an order having `orderStatus='CONFIRMED'` |
+| **Test Steps** | 1. `GET /api/orders/{orderId}` with a known valid ID<br>2. Assert HTTP 200<br>3. Assert response JSON has field `"orderStatus"` with value `"CONFIRMED"`<br>4. Assert existing fields (`orderId`, `orderDate`, `orderDesc`, `orderFee`) are all still present |
+| **Expected Result** | Response includes `orderStatus`; no existing fields removed |
+| **Automation Notes** | Add to `OrderResourceIntegrationTest.java`; use `JsonPath` assertions on response body |
+
+---
+
+#### TC-ORD-007: Provider contract — OrderDto response schema includes orderStatus (provider-contract)
+
+| Field | Value |
+|-------|-------|
+| **ID** | TC-ORD-007 |
+| **Type** | provider-contract |
+| **Priority** | P1 |
+| **Flow** | Order retrieval flow — provider side contract verification |
+| **Trigger** | `orderStatus` field added to `OrderDto`; downstream consumers must be able to handle it |
+| **Preconditions** | order-service running; Pact provider state: "an order with id 1 exists with status PENDING" |
+| **Test Steps** | 1. Set up Pact provider verification for `GET /api/orders/1`<br>2. Verify response contains `orderStatus` as String<br>3. Verify response contains all existing fields: `orderId`, `orderDate`, `orderDesc`, `orderFee`<br>4. Verify HTTP 200 |
+| **Expected Result** | Provider response matches consumer expectations including new `orderStatus` field |
+| **Automation Notes** | Create `OrderProviderPactTest.java` using `@Provider("order-service")` + `@PactBroker`; implement provider state handler for "order with status"; run via `mvn test -pl order-service` |
+
+---
+
+#### TC-ORD-008: Provider contract — GET /api/orders/status/{status} new endpoint contract (provider-contract)
+
+| Field | Value |
+|-------|-------|
+| **ID** | TC-ORD-008 |
+| **Type** | provider-contract |
+| **Priority** | P1 |
+| **Flow** | Status-based order listing — provider side |
+| **Trigger** | New `GET /api/orders/status/{status}` endpoint added |
+| **Preconditions** | Pact provider state: "orders with status PENDING exist" |
+| **Test Steps** | 1. `GET /api/orders/status/PENDING`<br>2. Verify HTTP 200<br>3. Verify response is `DtoCollectionResponse<OrderDto>`<br>4. Verify each item in collection has at minimum `orderId`, `orderDate`, `orderDesc`, `orderFee` fields |
+| **Expected Result** | New endpoint returns correct schema matching what consumers expect |
+| **Automation Notes** | Add provider state to `OrderProviderPactTest.java`; add interaction in consumer-side Pact tests for proxy-client |
+
+---
+
+### payment-service
+
+#### TC-PAY-001: PaymentServiceImpl deserializes OrderDto with new orderStatus field
+
+| Field | Value |
+|-------|-------|
+| **ID** | TC-PAY-001 |
+| **Type** | consumer-contract |
+| **Priority** | P1 |
+| **Flow** | Payment creation — order lookup step |
+| **Trigger** | `orderStatus` field added upstream in order-service `OrderDto` |
+| **Preconditions** | Mock HTTP server returning order-service response JSON |
+| **Test Steps** | 1. Set up WireMock stub: `GET /order-service/api/orders/1` returns `{"orderId":1,"orderDate":"...","orderDesc":"test","orderFee":99.99,"orderStatus":"SHIPPED"}`<br>2. Call `PaymentServiceImpl` method that fetches order by ID<br>3. Assert no deserialization exception thrown<br>4. Assert returned `OrderDto` has `orderStatus = "SHIPPED"` |
+| **Expected Result** | `PaymentServiceImpl` handles new field without error |
+| **Automation Notes** | Create `PaymentServiceImplOrderContractTest.java` in `payment-service/src/test/`; use `@SpringBootTest` + WireMock or Pact consumer test; ensure payment-service local `OrderDto` (or shared model) includes `orderStatus` field |
+
+---
+
+#### TC-PAY-002: PaymentServiceImpl tolerates null/absent orderStatus in order response
+
+| Field | Value |
+|-------|-------|
+| **ID** | TC-PAY-002 |
+| **Type** | consumer-contract |
+| **Priority** | P1 |
+| **Flow** | Payment creation — order lookup with absent status field |
+| **Trigger** | `orderStatus` is `@JsonInclude(NON_NULL)` — field may be absent for legacy orders |
+| **Preconditions** | Mock HTTP server returning order-service response without `orderStatus` field |
+| **Test Steps** | 1. Stub `GET /order-service/api/orders/1` to return `{"orderId":1,"orderDate":"...","orderDesc":"test","orderFee":99.99}` (no `orderStatus`)<br>2. Call `PaymentServiceImpl` order fetch method<br>3. Assert no exception<br>4. Assert `orderStatus` is null in returned `OrderDto` |
+| **Expected Result** | Absent `orderStatus` does not cause deserialization failure |
+| **Automation Notes** | Extend `PaymentServiceImplOrderContractTest.java`; critical if payment-service uses `DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES` — check `ObjectMapper` config first |
+
+---
+
+### shipping-service
+
+#### TC-SHP-001: OrderItemServiceImpl deserializes OrderDto with new orderStatus field
+
+| Field | Value |
+|-------|-------|
+| **ID** | TC-SHP-001 |
+| **Type** | consumer-contract |
+| **Priority** | P1 |
+| **Flow** | Shipping order item creation — order lookup step |
+| **Trigger** | `orderStatus` field added upstream in order-service `OrderDto` |
+| **Preconditions** | Mock HTTP server returning order-service response JSON with `orderStatus` |
+| **Test Steps** | 1. Stub `GET /order-service/api/orders/1` to return `{"orderId":1,"orderDate":"...","orderDesc":"test","orderFee":50.0,"orderStatus":"DELIVERED"}`<br>2. Invoke `OrderItemServiceImpl` method that calls order-service<br>3. Assert no exception<br>4. Assert returned `OrderDto` has `orderStatus = "DELIVERED"` |
+| **Expected Result** | `OrderItemServiceImpl` handles new field without error |
+| **Automation Notes** | Create `OrderItemServiceImplOrderContractTest.java` in `shipping-service/src/test/`; use WireMock or Pact consumer test |
+
+---
+
+#### TC-SHP-002: OrderItemServiceImpl tolerates absent orderStatus in order response
+
+| Field | Value |
+|-------|-------|
+| **ID** | TC-SHP-002 |
+| **Type** | consumer-contract |
+| **Priority** | P1 |
+| **Flow** | Shipping order item creation — order lookup with absent status |
+| **Trigger** | `orderStatus` is `@JsonInclude(NON_NULL)` — may be absent for legacy orders |
+| **Preconditions** | Mock HTTP server returning order-service response without `orderStatus` |
+| **Test Steps** | 1. Stub `GET /order-service/api/orders/1` to return JSON without `orderStatus`<br>2. Invoke `OrderItemServiceImpl` order fetch method<br>3. Assert no `NullPointerException` or deserialization exception<br>4. Assert result `OrderDto` has `orderStatus = null` |
+| **Expected Result** | Field absence handled gracefully |
+| **Automation Notes** | Extend `OrderItemServiceImplOrderContractTest.java` |
+
+---
+
+### proxy-client
+
+#### TC-PRX-001: OrderClientService FeignClient deserializes OrderDto with orderStatus
+
+| Field | Value |
+|-------|-------|
+| **ID** | TC-PRX-001 |
+| **Type** | consumer-contract |
+| **Priority** | P1 |
+| **Flow** | Proxy client order fetch — response deserialization |
+| **Trigger** | `orderStatus` field added to order-service `OrderDto` |
+| **Preconditions** | Mock order-service running (WireMock); proxy-client `OrderDto` model exists locally |
+| **Test Steps** | 1. Stub `GET /order-service/api/orders/1` to return JSON with `"orderStatus":"PENDING"`<br>2. Call `OrderController.findById("1")` in proxy-client<br>3. Assert HTTP 200<br>4. Assert response body includes `"orderStatus":"PENDING"` |
+| **Expected Result** | FeignClient passes `orderStatus` through to proxy-client response |
+| **Automation Notes** | Create `OrderClientServiceContractTest.java` in `proxy-client/src/test/`; use `@SpringBootTest` + WireMock server on order-service port |
+
+---
+
+#### TC-PRX-002: OrderClientService FeignClient — new status endpoint discoverability
+
+| Field | Value |
+|-------|-------|
+| **ID** | TC-PRX-002 |
+| **Type** | consumer-contract |
+| **Priority** | P2 |
+| **Flow** | Proxy client status-based order filtering |
+| **Trigger** | New `GET /api/orders/status/{status}` endpoint added in order-service; proxy-client FeignClient may need updating |
+| **Preconditions** | order-service running with new endpoint deployed |
+| **Test Steps** | 1. Check if `OrderClientService` has a `findByStatus(String status)` method<br>2. If yes: stub `GET /order-service/api/orders/status/PENDING` to return 200 with 2 orders; call the method; assert 2 orders returned<br>3. If no: call `GET /order-service/api/orders/status/PENDING` directly via order-service URL; assert 200; document the gap in proxy-client as a TODO |
+| **Expected Result** | Either proxy-client exposes the new endpoint, or gap is documented as a follow-up task |
+| **Automation Notes** | Add to `OrderClientServiceContractTest.java`; if `findByStatus` does not exist, create a GitHub issue or TODO comment in `OrderClientService.java` |
+
+---
+
+## Test Execution Order
+
+1. **P0 tests first** — None in this PR (no breaking changes)
+2. **P1 unit tests** — TC-ORD-001, TC-ORD-002, TC-ORD-003 (run in parallel, no DB required)
+3. **P1 integration tests** — TC-ORD-004, TC-ORD-006 (require order-service + DB)
+4. **P1 provider-contract tests** — TC-ORD-007, TC-ORD-008 (requires order-service running)
+5. **P1 consumer-contract tests** — TC-PAY-001, TC-PAY-002, TC-SHP-001, TC-SHP-002, TC-PRX-001 (run after provider contracts pass)
+6. **P2 tests** — TC-ORD-005, TC-PRX-002 (run last; non-blocking for deployment)
+
+---
+
+## Automation Framework Notes
+
+### Unit Tests
+- **Framework:** JUnit 5 + Mockito
+- **Annotation:** `@ExtendWith(MockitoExtension.class)` for pure unit; `@WebMvcTest` for controller slice
+- **Target classes:** `OrderDtoTest`, `OrderDtoSerializationTest`, `OrderResourceTest`
+- **Location:** `order-service/src/test/java/com/selimhorri/app/`
+
+### Integration Tests
+- **Framework:** JUnit 5 + `@SpringBootTest(webEnvironment=RANDOM_PORT)` + `TestRestTemplate`
+- **Database:** H2 in-memory for local; TestContainers (`mysql:8`) for CI/MySQL profile
+- **Target classes:** `OrderResourceIntegrationTest`
+- **Location:** `order-service/src/test/java/com/selimhorri/app/resource/`
+
+### Provider-Contract Tests (order-service)
+- **Framework:** Pact JVM — `au.com.dius.pact.provider:junit5spring`
+- **Annotations:** `@Provider("order-service")`, `@PactBroker` or `@PactFolder`
+- **Target class:** `OrderProviderPactTest`
+- **Location:** `order-service/src/test/java/com/selimhorri/app/contract/`
+- **Provider states:** implement `@State("an order with id 1 exists with status PENDING")` via `@BeforeEach` data seeding
+
+### Consumer-Contract Tests (downstream services)
+- **Framework:** Pact JVM consumer — `au.com.dius.pact.consumer:junit5` OR WireMock `com.github.tomakehurst:wiremock-jre8`
+- **For payment-service:** `PaymentServiceImplOrderContractTest` in `payment-service/src/test/`
+- **For shipping-service:** `OrderItemServiceImplOrderContractTest` in `shipping-service/src/test/`
+- **For proxy-client:** `OrderClientServiceContractTest` in `proxy-client/src/test/`
+
+### Suggested New Test File Paths
+| Test Class | Path |
+|-----------|------|
+| `OrderDtoSerializationTest` | `order-service/src/test/java/com/selimhorri/app/dto/OrderDtoSerializationTest.java` |
+| `OrderDtoTest` | `order-service/src/test/java/com/selimhorri/app/dto/OrderDtoTest.java` |
+| `OrderResourceTest` | `order-service/src/test/java/com/selimhorri/app/resource/OrderResourceTest.java` |
+| `OrderResourceIntegrationTest` | `order-service/src/test/java/com/selimhorri/app/resource/OrderResourceIntegrationTest.java` |
+| `OrderProviderPactTest` | `order-service/src/test/java/com/selimhorri/app/contract/OrderProviderPactTest.java` |
+| `PaymentServiceImplOrderContractTest` | `payment-service/src/test/java/com/selimhorri/app/service/PaymentServiceImplOrderContractTest.java` |
+| `OrderItemServiceImplOrderContractTest` | `shipping-service/src/test/java/com/selimhorri/app/service/OrderItemServiceImplOrderContractTest.java` |
+| `OrderClientServiceContractTest` | `proxy-client/src/test/java/com/selimhorri/app/client/OrderClientServiceContractTest.java` |
